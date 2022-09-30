@@ -1,0 +1,21 @@
+
+results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/AUJKJAMUKRIRHC-UHFFFAOYSA-N: 1st MD run (md0) in-vacuo, no cut off
+ &cntrl
+  imin = 0,
+  ntb = 0,
+  ntf=2,
+  ntc=2,
+  ntx = 1,
+  igb = 0,
+  ntpr = 100,
+  ntwx = 100,
+  ntt = 3,
+  nscm = 1,
+  gamma_ln = 1.0,
+  tempi = 0.0,
+  temp0 = 300.0,
+  nstlim = 100000,
+  dt = 0.0005,
+  cut = 999,ig=-1
+ /
+

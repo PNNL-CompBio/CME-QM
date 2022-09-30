@@ -1,0 +1,16 @@
+@<TRIPOS>MOLECULE
+*****
+    3     2     1     0     0
+SMALL
+bcc
+
+
+@<TRIPOS>ATOM
+      1 O            0.0020     0.3980     0.0000 oh         1 HOH      -0.785000
+      2 H           -0.7640    -0.1950     0.0000 ho         0 HOH       0.392000
+      3 H1           0.7620    -0.2030     0.0000 ho         0 HOH       0.392000
+@<TRIPOS>BOND
+     1     1     2 1   
+     2     1     3 1   
+@<TRIPOS>SUBSTRUCTURE
+     1 HOH         1 TEMP              0 ****  ****    0 ROOT

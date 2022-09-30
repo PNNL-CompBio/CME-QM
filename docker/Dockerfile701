@@ -1,0 +1,122 @@
+#based on earlier work by Vladimir Konjkov <Konjkov.VV@gmail.com>
+#
+# Create the image with the command
+# docker build -t nwchem-701.mpipr.nersc .
+#
+#after successful build one you can execute the QA tests using the command
+#docker run nwchem-701.mpipr.nersc dft_he2+ h2o_dk h2o_opt
+#TAKENFROM  Edoardo Apra <edoardo.apra@pnnl.gov>
+
+
+FROM        ubuntu:20.04
+
+ARG BUILD_DATE
+#ARG VCS_REF
+ARG BUILD_VERSION
+
+# Labels:
+LABEL org.label-schema.build-date=$BUILD_DATE
+LABEL org.label-schema.name="DarpaCME"
+LABEL org.label-schema.description=""
+LABEL org.label-schema.url=""
+LABEL org.label-schema.vcs-url="https://gitlab.pnnl.gov/computational_data_science/darpacme"
+#LABEL org.label-schema.vcs-ref=$VCS_REF
+LABEL org.label-schema.vendor="Pacific Northwest National Laboratory"
+LABEL org.label-schema.version=$BUILD_VERSION
+LABEL maintainer="Anubhav <anubhav@pnnl.gov>"
+LABEL tags="ComputationalChemistry"
+
+ARG DEBIAN_FRONTEND=noninteractive
+RUN         apt-get update \
+            && apt-get -y upgrade \
+            && apt-get install -y  g++ gfortran   make ssh patch curl subversion wget unzip perl git file python3 python3-dev bc \
+            && apt-get clean
+ARG nwchem_hash=75f3db2a2074e9158d605516009964d1a363e71f
+ARG mpich=3.3
+ARG mpich_prefix=mpich-$mpich
+RUN \
+    wget https://www.mpich.org/static/downloads/$mpich/$mpich_prefix.tar.gz && \
+    tar xvzf $mpich_prefix.tar.gz                                           && \
+    cd $mpich_prefix                                                        && \
+    ./configure                                                             && \
+    make -j 4                                                               && \
+    make install                                                            && \
+    make clean                                                              && \
+    cd ..                                                                   && \
+    rm -rf $mpich_prefix
+#get OpenBLAS and compile with 64-bit integers
+WORKDIR     /opt
+ENV         ARMCI_NETWORK=MPI-PR NWCHEM_TOP="/opt/nwchem-$nwchem_hash" \
+            NWCHEM_TARGET=LINUX64 \
+            NWCHEM_MODULES="all python" \
+            BUILD_OPENBLAS=1 \
+            BUILD_SCALAPACK=1 \
+            BLAS_SIZE=8 \
+            SCALAPACK_SIZE=8 \
+            USE_64TO32=y \
+            USE_MPI=y \
+            USE_MPIF=y \
+            USE_MPIF4=y
+#ENV         MRCC_METHODS=y
+#ENV         CCSDTQ=y
+#ENV         CCSDTLR=y
+RUN          cd /opt;curl -SL     https://github.com/nwchemgit/nwchem/archive/$nwchem_hash.tar.gz | tar xzf - \
+            && cd nwchem-$nwchem_hash/src \
+#strip native compiler options as Fedora does
+            && sed -i 's|-march=native||' config/makefile.h \
+            && sed -i 's|-mtune=native|-mtune=generic|' config/makefile.h \
+            && sed -i 's|-mfpmath=sse||' config/makefile.h \
+            && sed -i 's|-msse3||' config/makefile.h  \
+            && make nwchem_config && make -j3
+
+#                          ----- Miniconda3 :: CME pipeline virtual environment :: Start -----
+ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
+ENV PATH /opt/conda/bin:$PATH
+RUN wget --quiet https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda.sh && \
+    /bin/bash ~/miniconda.sh -b -p /opt/conda && \
+    rm ~/miniconda.sh && \
+    ln -s /opt/conda/etc/profile.d/conda.sh /etc/profile.d/conda.sh && \
+    echo ". /opt/conda/etc/profile.d/conda.sh" >> ~/.bashrc && \
+    echo "conda activate base" >> ~/.bashrc &&\
+    conda update -n base -c defaults conda
+
+# Install python dependencies
+COPY cme_environment.yml ./
+RUN conda env update -n base -f cme_environment.yml && \
+    conda clean --all
+
+#clean unnecessary packages
+RUN  apt-get -y remove  make \
+                        curl \
+                        unzip \
+                        cmake \
+                        perl \
+                        tcsh  \
+     &&  apt-get -y autoremove && apt-get clean
+
+# Setting up NWchem path!
+# No need to specify path explicitly for :
+# nwchem
+ENV         NWCHEM_EXECUTABLE=${NWCHEM_TOP}/bin/LINUX64/nwchem \
+            NWCHEM_BASIS_LIBRARY=${NWCHEM_TOP}/src/basis/libraries/ \
+            NWCHEM_NWPW_LIBRARY=${NWCHEM_TOP}/src/nwpw/libraryps/  \
+            FFIELD=amber \
+            AMBER_1=${NWCHEM_TOP}/src/data/amber_s/ \
+            AMBER_2=${NWCHEM_TOP}/src/data/amber_q/ \
+            AMBER_3=${NWCHEM_TOP}/src/data/amber_x/ \
+            AMBER_4=${NWCHEM_TOP}/src/data/amber_u/ \
+            SPCE=${NWCHEM_TOP}/src/data/solvents/spce.rst \
+            CHARMM_S=${NWCHEM_TOP}/src/data/charmm_s/ \
+            CHARMM_X=${NWCHEM_TOP}/src/data/charmm_x/ \
+            PATH=$PATH:${NWCHEM_TOP}/bin/LINUX64
+
+# Setting up Conda Path
+# No need to specify path explicitly for :
+#   conda packages: snakemake,
+#   Amber20 tools : tleap antechamber parmchk2 sander
+
+ENV         CONDA_PATH="/opt/conda"
+ENV         LEAPRC_GAFF=$CONDA_PATH/dat/leap/cmd/leaprc.gaff \
+            LEAPRC_FF14SB=$CONDA_PATH/dat/leap/cmd/oldff/leaprc.ff14SB
+
+WORKDIR /

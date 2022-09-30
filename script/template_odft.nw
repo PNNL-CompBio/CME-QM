@@ -1,0 +1,53 @@
+title "*"
+start *
+
+memory global 1600 mb heap 100 mb stack 600 mb
+
+permanent_dir /dtemp/emslc50597/Comp_chem_dG/workflow/dft//*
+scratch_dir /scratch
+
+echo
+print low
+
+charge -
+geometry noautoz noautosym
+ load /dtemp/emslc50597/Comp_chem_dG/workflow/dft//*/*.xyz
+end
+
+basis
+ * library 6-31G*
+end
+
+driver
+ maxiter 500
+ xyz *_geom
+end
+
+set lindep:n_dep 0
+
+dft
+  maxiter 500
+  xc b3lyp
+  odft
+  mult 2
+  disp vdw 3
+  mulliken
+  print "mulliken ao"
+  print "final vectors analysis"
+end
+
+task dft optimize ignore
+task dft freq
+
+cosmo
+ dielec 80.4
+ lineq  0
+end
+
+task dft energy
+
+property
+ dipole
+end
+
+task dft property

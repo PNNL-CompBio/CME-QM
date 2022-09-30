@@ -1,0 +1,51 @@
+title "AUJKJAMUKRIRHC-UHFFFAOYSA-N"
+start AUJKJAMUKRIRHC-UHFFFAOYSA-N
+
+memory global 1600 mb heap 100 mb stack 600 mb
+
+permanent_dir /entire/results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/dft
+#scratch_dir /scratch
+
+echo
+print low
+
+charge 0
+geometry noautoz noautosym
+ load /entire/results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/AUJKJAMUKRIRHC-UHFFFAOYSA-N.xyz
+end
+
+basis
+ * library 6-31G*
+end
+
+driver
+ maxiter 500
+ xyz AUJKJAMUKRIRHC-UHFFFAOYSA-N_geom
+end
+
+set lindep:n_dep 0
+
+dft
+  maxiter 500
+  xc b3lyp
+  disp vdw 3
+  mulliken
+  print "mulliken ao"
+  print "final vectors analysis"
+end
+
+task dft optimize ignore
+task dft freq
+
+cosmo
+ dielec 80.4
+ lineq  0
+end
+
+task dft energy
+
+property
+ dipole
+end
+
+task dft property

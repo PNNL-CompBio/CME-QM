@@ -1,0 +1,204 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 2
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	2	csv2inchi
+	2	extract_DFT_properties
+	1	generate_dag
+	1	generate_filegraph
+	1	generate_rulegraph
+	2	inchiTo3D
+	2	prepare_DFT_files
+	2	submit_DFT
+	2	submit_MD
+	2	submit_MD2
+	18
+
+[Sun Sep 20 22:14:30 2020]
+Job 1: Running csv2inchi...!
+
+
+        python src/gen_inchi/csv2inchi.py data/inchi.csv results/TUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/TUJKJAMUKRIRHC-UHFFFAOYSA-N.inchi > logs/TUJKJAMUKRIRHC-UHFFFAOYSA-N/csv2inchi.log
+        
+
+[Sun Sep 20 22:14:30 2020]
+Job 2: Running csv2inchi...!
+
+
+        python src/gen_inchi/csv2inchi.py data/inchi.csv results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/AUJKJAMUKRIRHC-UHFFFAOYSA-N.inchi > logs/AUJKJAMUKRIRHC-UHFFFAOYSA-N/csv2inchi.log
+        
+[Sun Sep 20 22:14:30 2020]
+Finished job 1.
+1 of 18 steps (6%) done
+[Sun Sep 20 22:14:30 2020]
+Finished job 2.
+2 of 18 steps (11%) done
+
+[Sun Sep 20 22:14:30 2020]
+localrule generate_filegraph:
+    output: logs/cme_filegraph.png
+    jobid: 17
+
+
+        snakemake --snakefile final_pipeline.smk --configfile config.yaml --filegraph | dot -Tpng > logs/cme_filegraph.png
+        
+
+[Sun Sep 20 22:14:30 2020]
+localrule generate_dag:
+    output: logs/cme_dag.png
+    jobid: 16
+
+
+        snakemake --snakefile final_pipeline.smk --configfile config.yaml --dag | dot -Tpng > logs/cme_dag.png
+        
+[Sun Sep 20 22:14:30 2020]
+Finished job 16.
+3 of 18 steps (17%) done
+
+[Sun Sep 20 22:14:30 2020]
+Job 3: Running inchiTo3D...!
+
+
+        python src/gen_3Dstructure/inchiTo3D.py results/TUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/TUJKJAMUKRIRHC-UHFFFAOYSA-N.inchi results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/AUJKJAMUKRIRHC-UHFFFAOYSA-N.inchi results/TUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/TUJKJAMUKRIRHC-UHFFFAOYSA-N.xyz results/TUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/TUJKJAMUKRIRHC-UHFFFAOYSA-N.mol results/TUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/TUJKJAMUKRIRHC-UHFFFAOYSA-N.mol2 results/TUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/TUJKJAMUKRIRHC-UHFFFAOYSA-N.png results/TUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/TUJKJAMUKRIRHC-UHFFFAOYSA-N.charge > logs/TUJKJAMUKRIRHC-UHFFFAOYSA-N/inchiTo3D.log
+        
+[Sun Sep 20 22:14:30 2020]
+Finished job 17.
+4 of 18 steps (22%) done
+
+[Sun Sep 20 22:14:30 2020]
+localrule generate_rulegraph:
+    output: logs/cme_rulegraph.png
+    jobid: 15
+
+
+        snakemake --snakefile final_pipeline.smk --configfile config.yaml --rulegraph | dot -Tpng > logs/cme_rulegraph.png
+        
+[Sun Sep 20 22:14:31 2020]
+Finished job 3.
+5 of 18 steps (28%) done
+
+[Sun Sep 20 22:14:31 2020]
+Job 5: Running submit_MD...!
+
+
+        python src/md_simulations/md.py results/TUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/TUJKJAMUKRIRHC-UHFFFAOYSA-N.mol2 results/TUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/TUJKJAMUKRIRHC-UHFFFAOYSA-N.charge > logs/TUJKJAMUKRIRHC-UHFFFAOYSA-N/submit_MD.log
+        
+[Sun Sep 20 22:14:31 2020]
+Finished job 15.
+6 of 18 steps (33%) done
+
+[Sun Sep 20 22:14:31 2020]
+Job 4: Running inchiTo3D...!
+
+
+        python src/gen_3Dstructure/inchiTo3D.py results/TUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/TUJKJAMUKRIRHC-UHFFFAOYSA-N.inchi results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/AUJKJAMUKRIRHC-UHFFFAOYSA-N.inchi results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/AUJKJAMUKRIRHC-UHFFFAOYSA-N.xyz results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/AUJKJAMUKRIRHC-UHFFFAOYSA-N.mol results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/AUJKJAMUKRIRHC-UHFFFAOYSA-N.mol2 results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/AUJKJAMUKRIRHC-UHFFFAOYSA-N.png results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/AUJKJAMUKRIRHC-UHFFFAOYSA-N.charge > logs/AUJKJAMUKRIRHC-UHFFFAOYSA-N/inchiTo3D.log
+        
+[Sun Sep 20 22:14:32 2020]
+Finished job 4.
+7 of 18 steps (39%) done
+
+[Sun Sep 20 22:14:32 2020]
+Job 6: Running submit_MD...!
+
+
+        python src/md_simulations/md.py results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/AUJKJAMUKRIRHC-UHFFFAOYSA-N.mol2 results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/AUJKJAMUKRIRHC-UHFFFAOYSA-N.charge > logs/AUJKJAMUKRIRHC-UHFFFAOYSA-N/submit_MD.log
+        
+[Sun Sep 20 22:14:33 2020]
+Finished job 5.
+8 of 18 steps (44%) done
+
+[Sun Sep 20 22:14:33 2020]
+Job 7: Running submit_MD2...!
+
+
+        python src/md_simulations/md2.py results/TUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/TUJKJAMUKRIRHC-UHFFFAOYSA-N.mol2 > logs/TUJKJAMUKRIRHC-UHFFFAOYSA-N/submit_MD2.log
+        
+[Sun Sep 20 22:14:34 2020]
+Finished job 6.
+9 of 18 steps (50%) done
+
+[Sun Sep 20 22:14:34 2020]
+Job 8: Running submit_MD2...!
+
+
+        python src/md_simulations/md2.py results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/AUJKJAMUKRIRHC-UHFFFAOYSA-N.mol2 > logs/AUJKJAMUKRIRHC-UHFFFAOYSA-N/submit_MD2.log
+        
+[Sun Sep 20 22:14:34 2020]
+Finished job 7.
+10 of 18 steps (56%) done
+
+[Sun Sep 20 22:14:34 2020]
+Job 9: Running prepare_DFT_files...!
+
+
+        python src/solvation/create_nw_files.py results/TUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/TUJKJAMUKRIRHC-UHFFFAOYSA-N/RUN1/EM/mdinfo results/TUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/TUJKJAMUKRIRHC-UHFFFAOYSA-N.charge results/TUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/TUJKJAMUKRIRHC-UHFFFAOYSA-N.xyz > logs/TUJKJAMUKRIRHC-UHFFFAOYSA-N/prepare_DFT_files.log
+        
+[Sun Sep 20 22:14:34 2020]
+Finished job 9.
+11 of 18 steps (61%) done
+
+[Sun Sep 20 22:14:34 2020]
+Job 11: Running submit_DFT...!
+
+
+        nwchem results/TUJKJAMUKRIRHC-UHFFFAOYSA-N/dft/TUJKJAMUKRIRHC-UHFFFAOYSA-N.nw > results/TUJKJAMUKRIRHC-UHFFFAOYSA-N/dft/TUJKJAMUKRIRHC-UHFFFAOYSA-N.out
+        
+[Sun Sep 20 22:14:35 2020]
+Finished job 8.
+12 of 18 steps (67%) done
+
+[Sun Sep 20 22:14:35 2020]
+Job 10: Running prepare_DFT_files...!
+
+
+        python src/solvation/create_nw_files.py results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/AUJKJAMUKRIRHC-UHFFFAOYSA-N/RUN1/EM/mdinfo results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/AUJKJAMUKRIRHC-UHFFFAOYSA-N.charge results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/AUJKJAMUKRIRHC-UHFFFAOYSA-N.xyz > logs/AUJKJAMUKRIRHC-UHFFFAOYSA-N/prepare_DFT_files.log
+        
+[Sun Sep 20 22:14:35 2020]
+Finished job 10.
+13 of 18 steps (72%) done
+
+[Sun Sep 20 22:14:35 2020]
+Job 12: Running submit_DFT...!
+
+
+        nwchem results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/dft/AUJKJAMUKRIRHC-UHFFFAOYSA-N.nw > results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/dft/AUJKJAMUKRIRHC-UHFFFAOYSA-N.out
+        
+[Sun Sep 20 22:14:50 2020]
+Finished job 11.
+14 of 18 steps (78%) done
+
+[Sun Sep 20 22:14:50 2020]
+Job 13: Running extract_DFT_properties...!
+
+
+         python src/extract_chem_props/extract_properties.py results/TUJKJAMUKRIRHC-UHFFFAOYSA-N/dft/TUJKJAMUKRIRHC-UHFFFAOYSA-N.out  > logs/TUJKJAMUKRIRHC-UHFFFAOYSA-N/extract_DFT_properties.log
+        
+[Sun Sep 20 22:14:50 2020]
+Finished job 13.
+15 of 18 steps (83%) done
+[Sun Sep 20 22:14:51 2020]
+Finished job 12.
+16 of 18 steps (89%) done
+
+[Sun Sep 20 22:14:51 2020]
+Job 14: Running extract_DFT_properties...!
+
+
+         python src/extract_chem_props/extract_properties.py results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/dft/AUJKJAMUKRIRHC-UHFFFAOYSA-N.out  > logs/AUJKJAMUKRIRHC-UHFFFAOYSA-N/extract_DFT_properties.log
+        
+[Sun Sep 20 22:14:51 2020]
+Finished job 14.
+17 of 18 steps (94%) done
+
+[Sun Sep 20 22:14:51 2020]
+localrule all:
+    input: results/TUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/TUJKJAMUKRIRHC-UHFFFAOYSA-N.inchi, results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/AUJKJAMUKRIRHC-UHFFFAOYSA-N.inchi, results/TUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/TUJKJAMUKRIRHC-UHFFFAOYSA-N.xyz, results/TUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/TUJKJAMUKRIRHC-UHFFFAOYSA-N.mol, results/TUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/TUJKJAMUKRIRHC-UHFFFAOYSA-N.mol2, results/TUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/TUJKJAMUKRIRHC-UHFFFAOYSA-N.png, results/TUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/TUJKJAMUKRIRHC-UHFFFAOYSA-N.charge, results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/AUJKJAMUKRIRHC-UHFFFAOYSA-N.xyz, results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/AUJKJAMUKRIRHC-UHFFFAOYSA-N.mol, results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/AUJKJAMUKRIRHC-UHFFFAOYSA-N.mol2, results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/AUJKJAMUKRIRHC-UHFFFAOYSA-N.png, results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/AUJKJAMUKRIRHC-UHFFFAOYSA-N.charge, results/TUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/TUJKJAMUKRIRHC-UHFFFAOYSA-N/RUN1/TLEAP/leap.log, results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/AUJKJAMUKRIRHC-UHFFFAOYSA-N/RUN1/TLEAP/leap.log, results/TUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/TUJKJAMUKRIRHC-UHFFFAOYSA-N/RUN1/EM/mdinfo, results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/AUJKJAMUKRIRHC-UHFFFAOYSA-N/RUN1/EM/mdinfo, results/TUJKJAMUKRIRHC-UHFFFAOYSA-N/dft/TUJKJAMUKRIRHC-UHFFFAOYSA-N.sbatch, results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/dft/AUJKJAMUKRIRHC-UHFFFAOYSA-N.sbatch, results/TUJKJAMUKRIRHC-UHFFFAOYSA-N/dft/TUJKJAMUKRIRHC-UHFFFAOYSA-N.out, results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/dft/AUJKJAMUKRIRHC-UHFFFAOYSA-N.out, results/TUJKJAMUKRIRHC-UHFFFAOYSA-N/dft/calculated_properties.txt, results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/dft/calculated_properties.txt, logs/cme_rulegraph.png, logs/cme_dag.png, logs/cme_filegraph.png
+    jobid: 0
+
+[Sun Sep 20 22:14:51 2020]
+Finished job 0.
+18 of 18 steps (100%) done
+Complete log: /entire/.snakemake/log/2020-09-20T221429.981967.snakemake.log

@@ -1,0 +1,7 @@
+CHARGE      0.00 ( 0 )
+Formula: H2 O1 
+ATOM      1  O   HOH     1       0.002   0.398   0.000 -0.410500        oh
+ATOM      2  H   HOH     0      -0.764  -0.195   0.000  0.205200        ho
+ATOM      3  H1  HOH     0       0.762  -0.203   0.000  0.205200        ho
+BOND    1    1    2    1      O    H
+BOND    2    1    3    1      O   H1

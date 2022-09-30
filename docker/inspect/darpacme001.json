@@ -1,0 +1,110 @@
+[
+  {
+    "time": 1600446408,
+    "step": 0,
+    "cmd": "START"
+-n   }
+,
+  {
+    "time": 1600447168,
+    "step": 1,
+    "cmd": "FROM debian"
+-n   }
+,
+  {
+    "time": 1600447168,
+    "step": 2,
+    "cmd": "ARG BUILD_DATE"
+-n   }
+,
+  {
+    "time": 1600447168,
+    "step": 3,
+    "cmd": "ARG BUILD_VERSION"
+-n   }
+,
+  {
+    "time": 1600447168,
+    "step": 4,
+    "cmd": "LABEL org.label-schema.build-date=$BUILD_DATE"
+-n   }
+,
+  {
+    "time": 1600447168,
+    "step": 5,
+    "cmd": "LABEL org.label-schema.name=\"DarpaCME\""
+-n   }
+,
+  {
+    "time": 1600447168,
+    "step": 6,
+    "cmd": "LABEL org.label-schema.description=\"\""
+-n   }
+,
+  {
+    "time": 1600447168,
+    "step": 7,
+    "cmd": "LABEL org.label-schema.url=\"\""
+-n   }
+,
+  {
+    "time": 1600447168,
+    "step": 8,
+    "cmd": "LABEL org.label-schema.vcs-url=\"https://gitlab.pnnl.gov/computational_data_science/darpacme\""
+-n   }
+,
+  {
+    "time": 1600447168,
+    "step": 9,
+    "cmd": "LABEL org.label-schema.vendor=\"Pacific Northwest National Laboratory\""
+-n   }
+,
+  {
+    "time": 1600447168,
+    "step": 10,
+    "cmd": "LABEL org.label-schema.version=$BUILD_VERSION"
+-n   }
+,
+  {
+    "time": 1600447168,
+    "step": 11,
+    "cmd": "LABEL maintainer=\"Anubhav <anubhav@pnnl.gov>\""
+-n   }
+,
+  {
+    "time": 1600447168,
+    "step": 12,
+    "cmd": "LABEL tags=\"ComputationalChemistry\""
+-n   }
+,
+  {
+    "time": 1600447168,
+    "step": 13,
+    "cmd": "RUN apt-get update && apt-get install --no-install-recommends --yes bzip2 ca-certificates curl fontconfig git tzdata vim unzip wget gfortran mpich libmpich-dev make ssh patch subversion perl file python3 python3-dev grep sed dpkg bc && apt-get clean"
+-n   }
+,
+  {
+    "time": 1600447168,
+    "step": 14,
+    "cmd": "WORKDIR /opt"
+-n   }
+,
+  {
+    "time": 1600447168,
+    "step": 15,
+    "cmd": "ENV ARMCI_NETWORK=MPI-PR NWCHEM_TOP=\"/opt/nwchem-7.0.0\" NWCHEM_TARGET=LINUX64 NWCHEM_MODULES=\"all python\" BUILD_OPENBLAS=1 BLAS_SIZE=4 SCALAPACK_SIZE=4 USE_64TO32=y USE_MPI=y USE_MPIF=y USE_MPIF4=y"
+-n   }
+,
+  {
+    "time": 1600447168,
+    "step": 16,
+    "cmd": "RUN cd /opt; curl -SL https://github.com/nwchemgit/nwchem/releases/download/v7.0.0-release/nwchem-7.0.0-release.revision-2c9a1c7c-src.2020-02-26.tar.bz2 | tar jxf - && cd nwchem-7.0.0/src && sed -i 's|-march=native||' config/makefile.h && sed -i 's|-mtune=native|-mtune=generic|' config/makefile.h && sed -i 's|-mfpmath=sse||' config/makefile.h && sed -i 's|-msse3||' config/makefile.h && make nwchem_config && make -j3"
+-n   }
+,
+  {
+    "time": 1600447168,
+    "step": -1,
+    "cmd": "END"
+-n   }
+
+]

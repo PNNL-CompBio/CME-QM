@@ -1,0 +1,5 @@
+snakemake -p --cores 2 --snakefile md-steps.snakemake -w 300
+
+snakemake -p --cores 2 --snakefile md-steps.snakemake
+
+python ../../dft-cme.py --inchi --configfile config.yaml --w 30 --clusterfile cluster.config

@@ -1,0 +1,332 @@
+{
+    "total_runtime": 21.196950912475586,
+    "rules": {
+        "csv2inchi": {
+            "mean-runtime": 0.09365653991699219,
+            "min-runtime": 0.09234380722045898,
+            "max-runtime": 0.09496927261352539
+        },
+        "generate_filegraph": {
+            "mean-runtime": 0.6513357162475586,
+            "min-runtime": 0.6513357162475586,
+            "max-runtime": 0.6513357162475586
+        },
+        "generate_dag": {
+            "mean-runtime": 0.413923978805542,
+            "min-runtime": 0.413923978805542,
+            "max-runtime": 0.413923978805542
+        },
+        "inchiTo3D": {
+            "mean-runtime": 0.5681039094924927,
+            "min-runtime": 0.5052030086517334,
+            "max-runtime": 0.631004810333252
+        },
+        "generate_rulegraph": {
+            "mean-runtime": 0.36133408546447754,
+            "min-runtime": 0.36133408546447754,
+            "max-runtime": 0.36133408546447754
+        },
+        "submit_MD": {
+            "mean-runtime": 2.0048660039901733,
+            "min-runtime": 1.9696252346038818,
+            "max-runtime": 2.040106773376465
+        },
+        "submit_MD2": {
+            "mean-runtime": 1.3700944185256958,
+            "min-runtime": 1.2725424766540527,
+            "max-runtime": 1.4676463603973389
+        },
+        "prepare_DFT_files": {
+            "mean-runtime": 0.10343003273010254,
+            "min-runtime": 0.08623313903808594,
+            "max-runtime": 0.12062692642211914
+        },
+        "submit_DFT": {
+            "mean-runtime": 15.480470895767212,
+            "min-runtime": 15.47946047782898,
+            "max-runtime": 15.481481313705444
+        },
+        "extract_DFT_properties": {
+            "mean-runtime": 0.12734901905059814,
+            "min-runtime": 0.12013554573059082,
+            "max-runtime": 0.13456249237060547
+        },
+        "all": {
+            "mean-runtime": 0.001338958740234375,
+            "min-runtime": 0.001338958740234375,
+            "max-runtime": 0.001338958740234375
+        }
+    },
+    "files": {
+        "results/TUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/TUJKJAMUKRIRHC-UHFFFAOYSA-N.inchi": {
+            "start-time": "Sun Sep 20 22:14:30 2020",
+            "stop-time": "Sun Sep 20 22:14:30 2020",
+            "duration": 0.09496927261352539,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/AUJKJAMUKRIRHC-UHFFFAOYSA-N.inchi": {
+            "start-time": "Sun Sep 20 22:14:30 2020",
+            "stop-time": "Sun Sep 20 22:14:30 2020",
+            "duration": 0.09234380722045898,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "logs/cme_filegraph.png": {
+            "start-time": "Sun Sep 20 22:14:30 2020",
+            "stop-time": "Sun Sep 20 22:14:30 2020",
+            "duration": 0.6513357162475586,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "logs/cme_dag.png": {
+            "start-time": "Sun Sep 20 22:14:30 2020",
+            "stop-time": "Sun Sep 20 22:14:30 2020",
+            "duration": 0.413923978805542,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "results/TUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/TUJKJAMUKRIRHC-UHFFFAOYSA-N.xyz": {
+            "start-time": "Sun Sep 20 22:14:30 2020",
+            "stop-time": "Sun Sep 20 22:14:31 2020",
+            "duration": 0.5052030086517334,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "results/TUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/TUJKJAMUKRIRHC-UHFFFAOYSA-N.mol": {
+            "start-time": "Sun Sep 20 22:14:30 2020",
+            "stop-time": "Sun Sep 20 22:14:31 2020",
+            "duration": 0.5052030086517334,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "results/TUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/TUJKJAMUKRIRHC-UHFFFAOYSA-N.mol2": {
+            "start-time": "Sun Sep 20 22:14:30 2020",
+            "stop-time": "Sun Sep 20 22:14:31 2020",
+            "duration": 0.5052030086517334,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "results/TUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/TUJKJAMUKRIRHC-UHFFFAOYSA-N.png": {
+            "start-time": "Sun Sep 20 22:14:30 2020",
+            "stop-time": "Sun Sep 20 22:14:31 2020",
+            "duration": 0.5052030086517334,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "results/TUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/TUJKJAMUKRIRHC-UHFFFAOYSA-N.charge": {
+            "start-time": "Sun Sep 20 22:14:30 2020",
+            "stop-time": "Sun Sep 20 22:14:31 2020",
+            "duration": 0.5052030086517334,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "logs/cme_rulegraph.png": {
+            "start-time": "Sun Sep 20 22:14:30 2020",
+            "stop-time": "Sun Sep 20 22:14:31 2020",
+            "duration": 0.36133408546447754,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "results/TUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/TUJKJAMUKRIRHC-UHFFFAOYSA-N/RUN1/TLEAP/leap.log": {
+            "start-time": "Sun Sep 20 22:14:31 2020",
+            "stop-time": "Sun Sep 20 22:14:33 2020",
+            "duration": 2.040106773376465,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/AUJKJAMUKRIRHC-UHFFFAOYSA-N.xyz": {
+            "start-time": "Sun Sep 20 22:14:31 2020",
+            "stop-time": "Sun Sep 20 22:14:32 2020",
+            "duration": 0.631004810333252,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/AUJKJAMUKRIRHC-UHFFFAOYSA-N.mol": {
+            "start-time": "Sun Sep 20 22:14:31 2020",
+            "stop-time": "Sun Sep 20 22:14:32 2020",
+            "duration": 0.631004810333252,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/AUJKJAMUKRIRHC-UHFFFAOYSA-N.mol2": {
+            "start-time": "Sun Sep 20 22:14:31 2020",
+            "stop-time": "Sun Sep 20 22:14:32 2020",
+            "duration": 0.631004810333252,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/AUJKJAMUKRIRHC-UHFFFAOYSA-N.png": {
+            "start-time": "Sun Sep 20 22:14:31 2020",
+            "stop-time": "Sun Sep 20 22:14:32 2020",
+            "duration": 0.631004810333252,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/AUJKJAMUKRIRHC-UHFFFAOYSA-N.charge": {
+            "start-time": "Sun Sep 20 22:14:31 2020",
+            "stop-time": "Sun Sep 20 22:14:32 2020",
+            "duration": 0.631004810333252,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/AUJKJAMUKRIRHC-UHFFFAOYSA-N/RUN1/TLEAP/leap.log": {
+            "start-time": "Sun Sep 20 22:14:32 2020",
+            "stop-time": "Sun Sep 20 22:14:34 2020",
+            "duration": 1.9696252346038818,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "results/TUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/TUJKJAMUKRIRHC-UHFFFAOYSA-N/RUN1/EM/mdinfo": {
+            "start-time": "Sun Sep 20 22:14:33 2020",
+            "stop-time": "Sun Sep 20 22:14:34 2020",
+            "duration": 1.2725424766540527,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/AUJKJAMUKRIRHC-UHFFFAOYSA-N/RUN1/EM/mdinfo": {
+            "start-time": "Sun Sep 20 22:14:34 2020",
+            "stop-time": "Sun Sep 20 22:14:35 2020",
+            "duration": 1.4676463603973389,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "results/TUJKJAMUKRIRHC-UHFFFAOYSA-N/dft/TUJKJAMUKRIRHC-UHFFFAOYSA-N.sbatch": {
+            "start-time": "Sun Sep 20 22:14:34 2020",
+            "stop-time": "Sun Sep 20 22:14:34 2020",
+            "duration": 0.12062692642211914,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "results/TUJKJAMUKRIRHC-UHFFFAOYSA-N/dft/TUJKJAMUKRIRHC-UHFFFAOYSA-N.nw": {
+            "start-time": "Sun Sep 20 22:14:34 2020",
+            "stop-time": "Sun Sep 20 22:14:34 2020",
+            "duration": 0.12062692642211914,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "results/TUJKJAMUKRIRHC-UHFFFAOYSA-N/dft/TUJKJAMUKRIRHC-UHFFFAOYSA-N.out": {
+            "start-time": "Sun Sep 20 22:14:34 2020",
+            "stop-time": "Sun Sep 20 22:14:50 2020",
+            "duration": 15.481481313705444,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/dft/AUJKJAMUKRIRHC-UHFFFAOYSA-N.sbatch": {
+            "start-time": "Sun Sep 20 22:14:35 2020",
+            "stop-time": "Sun Sep 20 22:14:35 2020",
+            "duration": 0.08623313903808594,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/dft/AUJKJAMUKRIRHC-UHFFFAOYSA-N.nw": {
+            "start-time": "Sun Sep 20 22:14:35 2020",
+            "stop-time": "Sun Sep 20 22:14:35 2020",
+            "duration": 0.08623313903808594,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/dft/AUJKJAMUKRIRHC-UHFFFAOYSA-N.out": {
+            "start-time": "Sun Sep 20 22:14:35 2020",
+            "stop-time": "Sun Sep 20 22:14:51 2020",
+            "duration": 15.47946047782898,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "results/TUJKJAMUKRIRHC-UHFFFAOYSA-N/dft/calculated_properties.txt": {
+            "start-time": "Sun Sep 20 22:14:50 2020",
+            "stop-time": "Sun Sep 20 22:14:50 2020",
+            "duration": 0.13456249237060547,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/dft/calculated_properties.txt": {
+            "start-time": "Sun Sep 20 22:14:51 2020",
+            "stop-time": "Sun Sep 20 22:14:51 2020",
+            "duration": 0.12013554573059082,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        }
+    }
+}

@@ -1,0 +1,170 @@
+
+          -------------------------------------------------------
+          Amber 20 SANDER                              2020
+          -------------------------------------------------------
+
+| Run on 09/20/2020 at 22:14:34
+
+|   Executable path: sander
+| Working directory: /entire/results/TUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/TUJKJAMUKRIRHC-UHFFFAOYSA-N/RUN1/MD0
+|          Hostname: 8b50e8321ba3
+
+
+File Assignments:
+|  MDIN: md0.in                                                                
+| MDOUT: TUJKJAMUKRIRHC-UHFFFAOYSA-N0.out                                      
+|INPCRD: /entire/results/TUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/TUJKJAMU
+|  PARM: /entire/results/TUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/TUJKJAMU
+|RESTRT: TUJKJAMUKRIRHC-UHFFFAOYSA-N0.rst                                      
+|  REFC: refc                                                                  
+| MDVEL: mdvel                                                                 
+| MDFRC: mdfrc                                                                 
+|  MDEN: mden                                                                  
+| MDCRD: TUJKJAMUKRIRHC-UHFFFAOYSA-N0.crd                                      
+|MDINFO: mdinfo                                                                
+|  MTMD: mtmd                                                                  
+|INPDIP: inpdip                                                                
+|RSTDIP: rstdip                                                                
+|INPTRA: inptraj                                                               
+
+
+ Here is the input file:
+
+                                                                               
+results/TUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/TUJKJAMUKRIRHC-UHFFFAOYSA-N: 1st MD run (md0) in-vacuo, no cut off
+ &cntrl                                                                        
+  imin = 0,                                                                    
+  ntb = 0,                                                                     
+  ntf=2,                                                                       
+  ntc=2,                                                                       
+  ntx = 1,                                                                     
+  igb = 0,                                                                     
+  ntpr = 100,                                                                  
+  ntwx = 100,                                                                  
+  ntt = 3,                                                                     
+  nscm = 1,                                                                    
+  gamma_ln = 1.0,                                                              
+  tempi = 0.0,                                                                 
+  temp0 = 300.0,                                                               
+  nstlim = 100000,                                                             
+  dt = 0.0005,                                                                 
+  cut = 999,ig=-1                                                              
+ /                                                                             
+                                                                               
+
+--------------------------------------------------------------------------------
+   1.  RESOURCE   USE: 
+--------------------------------------------------------------------------------
+
+| Flags:                                                                        
+|    NONPERIODIC   ntb=0 and igb=0: Setting up nonperiodic simulation
+|  *** cutoff > system size, list only builds once
+|Largest sphere to fit in unit cell has radius =    30.000
+| New format PARM file being parsed.
+| Version =    1.000 Date = 09/20/20 Time = 22:14:33
+ NATOM  =       3 NTYPES =       2 NBONH =       2 MBONA  =       0
+ NTHETH =       1 MTHETA =       0 NPHIH =       0 MPHIA  =       0
+ NHPARM =       0 NPARM  =       0 NNB   =       4 NRES   =       1
+ NBONA  =       0 NTHETA =       0 NPHIA =       0 NUMBND =       1
+ NUMANG =       1 NPTRA  =       0 NATYP =       2 NPHB   =       0
+ IFBOX  =       0 NMXRS  =       3 IFCAP =       0 NEXTRA =       0
+ NCOPY  =       0
+
+
+|     Memory Use     Allocated
+|     Real              510430
+|     Hollerith             12
+|     Integer            20076
+|     Max Pairs              3
+|     nblistReal            36
+|     nblist Int      70539645
+|       Total           279611 kbytes
+
+| Note: 1-4 EEL scale factors are being read from the topology file.
+
+| Note: 1-4 VDW scale factors are being read from the topology file.
+| Duplicated    0 dihedrals
+| Duplicated    0 dihedrals
+Note: ig = -1. Setting random seed to   551890 based on wallclock time in microseconds.
+
+--------------------------------------------------------------------------------
+   2.  CONTROL  DATA  FOR  THE  RUN
+--------------------------------------------------------------------------------
+
+*****                                                                           
+
+General flags:
+     imin    =       0, nmropt  =       0
+
+Nature and format of input:
+     ntx     =       1, irest   =       0, ntrx    =       1
+
+Nature and format of output:
+     ntxo    =       2, ntpr    =     100, ntrx    =       1, ntwr    =  100000
+     iwrap   =       0, ntwx    =     100, ntwv    =       0, ntwe    =       0
+     ioutfm  =       1, ntwprt  =       0, idecomp =       0, rbornstat=      0
+
+Potential function:
+     ntf     =       2, ntb     =       0, igb     =       0, nsnb    =      25
+     ipol    =       0, gbsa    =       0, iesp    =       0
+     dielc   =   1.00000, cut     = 999.00000, intdiel =   1.00000
+
+Frozen or restrained atoms:
+     ibelly  =       0, ntr     =       0
+
+Molecular dynamics:
+     nstlim  =    100000, nscm    =         1, nrespa  =         1
+     t       =   0.00000, dt      =   0.00050, vlimit  =  20.00000
+
+Langevin dynamics temperature regulation:
+     ig      =  551890
+     temp0   = 300.00000, tempi   =   0.00000, gamma_ln=   1.00000
+
+SHAKE:
+     ntc     =       2, jfastw  =       0
+     tol     =   0.00001
+|  INFO: Old style inpcrd file read
+
+
+--------------------------------------------------------------------------------
+   3.  ATOMIC COORDINATES AND VELOCITIES
+--------------------------------------------------------------------------------
+
+*****                                                                           
+ begin time read from input coords =     0.000 ps
+
+ Number of triangulated 3-point waters found:        0
+
+     Sum of charges from parm topology file =  -0.00100000
+     Forcing neutrality...
+
+--------------------------------------------------------------------------------
+   4.  RESULTS
+--------------------------------------------------------------------------------
+
+|  # of SOLUTE  degrees of freedom (RNDFP):       7.
+|  # of SOLVENT degrees of freedom (RNDFS):       0.
+|  NDFMIN =       7.     NUM_NOSHAKE =      0     CORRECTED RNDFP =       7.
+|  TOTAL # of degrees of freedom (RNDF) =       7.
+ ---------------------------------------------------
+
+     eedmeth=4: Setting switch to one everywhere
+
+ ---------------------------------------------------
+| Local SIZE OF NONBOND LIST =          0
+| TOTAL SIZE OF NONBOND LIST =          0
+
+ NSTEP =        0   TIME(PS) =       0.000  TEMP(K) =     0.00  PRESS =     0.0
+ Etot   =        64.1434  EKtot   =         0.0000  EPtot      =        64.1434
+ BOND   =         0.0000  ANGLE   =        64.1434  DIHED      =         0.0000
+ 1-4 NB =         0.0000  1-4 EEL =         0.0000  VDWAALS    =         0.0000
+ EELEC  =         0.0000  EHBOND  =         0.0000  RESTRAINT  =         0.0000
+ ------------------------------------------------------------------------------
+
+
+     Coordinate resetting (SHAKE) cannot be accomplished,
+     deviation is too large
+     NITER, NIT, LL, I and J are :      0      6      1      1      2
+
+     Note: This is usually a symptom of some deeper
+     problem with the energetics of the system.

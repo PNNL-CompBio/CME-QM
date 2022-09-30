@@ -1,0 +1,94 @@
+from os.path import *
+import sys
+#import glob
+
+sys.path.append(os.path.abspath(os.path.join(sys.path[0],'..','scripts','inchi2mol')))
+scripts = os.path.abspath(os.path.join(sys.path[0],'..','scripts'))
+#nw_template = os.path.abspath(os.path.join(sys.path[0],'..','resources','dft',config["nwchem"]["template_file"]))
+#charge_script = os.path.abspath(os.path.join(sys.path[0],'..','resources','dft',config["mol"]["charge_script"]))
+
+
+(IDS,)=glob_wildcards("{id}/initial_structure")
+
+print(IDS)
+rule all:
+#    input:  expand("{id}/md/{id}.mol2",id=IDS)
+#    input: expand("{id}/md/{id}/RUN1/TLEAP/{id}.crd", id=IDS)
+#    input: expand("{id}/md/{id}/RUN1/TLEAP/leap.log", id=IDS)
+#    input: expand("{id}/dft/{id}.xyz", id=IDS), expand("{id}/dft/{id}.nw", id=IDS)
+     input: expand("{id}/dft/{id}.out", id=IDS)  
+
+rule inchiTo3D:
+    input: "{id}/initial_structure/{id}.inchi"
+    output: "{id}/initial_structure/{id}.xyz", "{id}/initial_structure/{id}.mol","{id}/initial_structure/{id}.mol2","{id}/initial_structure/{id}.png", "{id}/initial_structure/{id}.charge"
+    shell:
+        """
+        python inchiTo3D.py {wildcards.id}/initial_structure/{wildcards.id}.inchi {wildcards.id}/initial_structure/{wildcards.id}.xyz {wildcards.id}/initial_structure/{wildcards.id}.mol {wildcards.id}/initial_structure/{wildcards.id}.mol2 {wildcards.id}/initial_structure/{wildcards.id}.png {wildcards.id}/initial_structure/{wildcards.id}.charge
+        echo "check print"
+        touch "inchiTo3D_done"
+        """
+
+
+rule prepare_MDfile: 
+    input: "{id}/initial_structure/{id}.xyz"
+    output: "{id}/md/{id}.mol2", "{id}/md/{id}.charge"
+    shell:
+        """
+        cp {wildcards.id}/initial_structure/{wildcards.id}.mol2 {wildcards.id}/md/{wildcards.id}.mol2
+        cp {wildcards.id}/initial_structure/{wildcards.id}.charge {wildcards.id}/md/{wildcards.id}.charge
+        """
+#
+#  Step 1 of MD
+#
+
+rule submit_MD1:
+    input:  "{id}/md/{id}.mol2", "{id}/md/{id}.charge"
+#    output: "{id}/md/{id}/RUN1/TLEAP/{id}.crd"
+    output: "{id}/md/{id}/RUN1/TLEAP/leap.log"
+    shell:
+        """
+        echo "{wildcards.id}"
+        python md.py {wildcards.id}
+        """
+#
+#  Step 2 of MD
+#
+
+rule submit_MD2:
+    input: "{id}/md/{id}/RUN1/TLEAP/leap.log"
+    output:"{id}/md/{id}/RUN1/EM/mdinfo" 
+    shell:
+        """
+        python md2.py {wildcards.id}
+        """
+
+#
+#  Prepare files for DFT taking geometry from MD
+#
+
+rule prepare_DFT_files:
+    input: "{id}/md/{id}/RUN1/EM/mdinfo"
+    output: "{id}/dft/{id}.xyz", "{id}/dft/{id}.nw", "{id}/dft/{id}.sbatch"
+    shell:
+        """
+        cp {wildcards.id}/initial_structure/{wildcards.id}.xyz {wildcards.id}/dft/{wildcards.id}.xyz
+        cp {wildcards.id}/md/{wildcards.id}.charge {wildcards.id}/dft/{wildcards.id}.charge
+        cp template_dft.nw {wildcards.id}/dft/{wildcards.id}.nw
+        cp template_dft.sbatch {wildcards.id}/dft/{wildcards.id}.sbatch
+        python create_nw_files.py {wildcards.id} 
+        """
+#
+#  submit dft calculations
+#
+
+rule submit_DFT:
+    input: "{id}/dft/{id}.nw", "{id}/dft/{id}.sbatch", "{id}/dft/{id}.xyz"
+    output:"{id}/dft/{id}.out"
+    shell:
+        """
+        sbatch  {wildcards.id}/dft/{wildcards.id}.sbatch
+        """
+
+
+
+

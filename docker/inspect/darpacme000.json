@@ -1,0 +1,158 @@
+[
+  {
+    "time": 1600446384,
+    "step": 0,
+    "cmd": "START"
+-n   }
+,
+  {
+    "time": 1600448134,
+    "step": 1,
+    "cmd": "FROM continuumio/anaconda3:latest"
+-n   }
+,
+  {
+    "time": 1600448134,
+    "step": 2,
+    "cmd": "ARG BUILD_DATE"
+-n   }
+,
+  {
+    "time": 1600448134,
+    "step": 3,
+    "cmd": "ARG BUILD_VERSION"
+-n   }
+,
+  {
+    "time": 1600448134,
+    "step": 4,
+    "cmd": "LABEL org.label-schema.build-date=$BUILD_DATE"
+-n   }
+,
+  {
+    "time": 1600448134,
+    "step": 5,
+    "cmd": "LABEL org.label-schema.name=\"DarpaCME\""
+-n   }
+,
+  {
+    "time": 1600448134,
+    "step": 6,
+    "cmd": "LABEL org.label-schema.description=\"\""
+-n   }
+,
+  {
+    "time": 1600448134,
+    "step": 7,
+    "cmd": "LABEL org.label-schema.url=\"\""
+-n   }
+,
+  {
+    "time": 1600448134,
+    "step": 8,
+    "cmd": "LABEL org.label-schema.vcs-url=\"https://gitlab.pnnl.gov/computational_data_science/darpacme\""
+-n   }
+,
+  {
+    "time": 1600448134,
+    "step": 9,
+    "cmd": "LABEL org.label-schema.vendor=\"Pacific Northwest National Laboratory\""
+-n   }
+,
+  {
+    "time": 1600448134,
+    "step": 10,
+    "cmd": "LABEL org.label-schema.version=$BUILD_VERSION"
+-n   }
+,
+  {
+    "time": 1600448134,
+    "step": 11,
+    "cmd": "LABEL maintainer=\"Anubhav <anubhav@pnnl.gov>\""
+-n   }
+,
+  {
+    "time": 1600448134,
+    "step": 12,
+    "cmd": "LABEL tags=\"ComputationalChemistry\""
+-n   }
+,
+  {
+    "time": 1600448134,
+    "step": 13,
+    "cmd": "RUN apt-get update && apt-get install --no-install-recommends --yes wget bzip2 ssh python-dev gfortran libopenblas-dev libopenmpi-dev bc openmpi-bin tcsh make openbabel && apt-get clean"
+-n   }
+,
+  {
+    "time": 1600448134,
+    "step": 14,
+    "cmd": "ENV NWCHEM_TOP=\"/opt/nwchem-6.8.1\" NWCHEM_TARGET=LINUX64 BLASOPT=\"-lopenblas -lpthread -lrt\" BLAS_SIZE=4 USE_64TO32=y NWCHEM_MODULES=\"smallqm\" USE_MPI=y USE_MPIF=y USE_MPIF4=y"
+-n   }
+,
+  {
+    "time": 1600448134,
+    "step": 15,
+    "cmd": "RUN cd opt && wget https://github.com/nwchemgit/nwchem/releases/download/6.8.1-release/nwchem-6.8.1-release.revision-v6.8-133-ge032219-srconly.2018-06-14.tar.bz2 && tar -vxjf nwchem-6.8.1-release.revision-v6.8-133-ge032219-srconly.2018-06-14.tar.bz2 && rm nwchem-6.8.1-release.revision-v6.8-133-ge032219-srconly.2018-06-14.tar.bz2 && cd ${NWCHEM_TOP}/src && make nwchem_config && make 64_to_32 && make -j3"
+-n   }
+,
+  {
+    "time": 1600448134,
+    "step": 16,
+    "cmd": "COPY cme_environment.yml ./"
+-n   }
+,
+  {
+    "time": 1600448134,
+    "step": 17,
+    "cmd": "RUN conda create --name cme_env python=3.7"
+-n   }
+,
+  {
+    "time": 1600448134,
+    "step": 18,
+    "cmd": "SHELL [\"conda\", \"run\", \"-n\", \"cme_env\", \"/bin/bash\", \"-c\"]"
+-n   }
+,
+  {
+    "time": 1600448134,
+    "step": 19,
+    "cmd": "RUN conda env update -n cme_env -f cme_environment.yml && conda activate cme_env && conda clean --all"
+-n   }
+,
+  {
+    "time": 1600448134,
+    "step": 20,
+    "cmd": "RUN apt-get -y remove make curl subversion unzip cmake perl tcsh ssh gfortran python-dev libopenmpi-dev && apt-get -y autoremove && apt-get clean"
+-n   }
+,
+  {
+    "time": 1600448134,
+    "step": 21,
+    "cmd": "ENV NWCHEM_EXECUTABLE=${NWCHEM_TOP}/bin/LINUX64/nwchem NWCHEM_BASIS_LIBRARY=${NWCHEM_TOP}/src/basis/libraries/ NWCHEM_NWPW_LIBRARY=${NWCHEM_TOP}/src/nwpw/libraryps/ FFIELD=amber AMBER_1=${NWCHEM_TOP}/src/data/amber_s/ AMBER_2=${NWCHEM_TOP}/src/data/amber_q/ AMBER_3=${NWCHEM_TOP}/src/data/amber_x/ AMBER_4=${NWCHEM_TOP}/src/data/amber_u/ SPCE=${NWCHEM_TOP}/src/data/solvents/spce.rst CHARMM_S=${NWCHEM_TOP}/src/data/charmm_s/ CHARMM_X=${NWCHEM_TOP}/src/data/charmm_x/ PATH=$PATH:${NWCHEM_TOP}/bin/LINUX64"
+-n   }
+,
+  {
+    "time": 1600448134,
+    "step": 22,
+    "cmd": "ENV CONDA_PATH=\"/opt/conda/envs/cme_env\""
+-n   }
+,
+  {
+    "time": 1600448134,
+    "step": 23,
+    "cmd": "ENV LEAPRC_GAFF=$CONDA_PATH/dat/leap/cmd/leaprc.gaff LEAPRC_FF14SB=$CONDA_PATH/dat/leap/cmd/leaprc.ff14SB PATH=$CONDA_PATH/bin:$PATH"
+-n   }
+,
+  {
+    "time": 1600448134,
+    "step": 24,
+    "cmd": "WORKDIR /"
+-n   }
+,
+  {
+    "time": 1600448134,
+    "step": -1,
+    "cmd": "END"
+-n   }
+
+]

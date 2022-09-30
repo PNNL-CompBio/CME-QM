@@ -1,0 +1,51 @@
+title "INCHIKEY"
+start INCHIKEY
+
+memory global 1600 mb heap 100 mb stack 600 mb
+
+permanent_dir DFT_DIR_PATH
+#scratch_dir /scratch
+
+echo
+print low
+
+charge CHARGE
+geometry noautoz noautosym
+ load XYZ_FILE_PATH
+end
+
+basis
+ * library 6-31G*
+end
+
+driver
+ maxiter 500
+ xyz INCHIKEY_geom
+end
+
+set lindep:n_dep 0
+
+dft
+  maxiter 500
+  xc b3lyp
+  disp vdw 3
+  mulliken
+  print "mulliken ao"
+  print "final vectors analysis"
+end
+
+task dft optimize ignore
+task dft freq
+
+cosmo
+ dielec 80.4
+ lineq  0
+end
+
+task dft energy
+
+property
+ dipole
+end
+
+task dft property

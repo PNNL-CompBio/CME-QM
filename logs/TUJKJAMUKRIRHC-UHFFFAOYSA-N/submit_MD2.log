@@ -1,0 +1,38 @@
+==========In batch_md0.sbatch :
+Current dir /entire
+mol2dir:  results/TUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure
+mddir: 
+rindex:  1 saindex:  1
+start_count:  1 end_count:  1
+molecule name: results/TUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/TUJKJAMUKRIRHC-UHFFFAOYSA-N
+mol2f TUJKJAMUKRIRHC-UHFFFAOYSA-N
+
+Running amber_sander_em_md0.sh :
+mol2dir:  results/TUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure
+mol2f:  TUJKJAMUKRIRHC-UHFFFAOYSA-N
+rindex:  1
+saindex:  1
+
+==========In amber_sander_em_md0.sh :
+creating following directories at: /entire
+moldir: /entire/results/TUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/TUJKJAMUKRIRHC-UHFFFAOYSA-N
+rundir:/entire/results/TUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/TUJKJAMUKRIRHC-UHFFFAOYSA-N/RUN1
+acdir: /entire/results/TUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/TUJKJAMUKRIRHC-UHFFFAOYSA-N/RUN1/ANTECHAMBER
+tldir: /entire/results/TUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/TUJKJAMUKRIRHC-UHFFFAOYSA-N/RUN1/TLEAP
+emdir: /entire/results/TUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/TUJKJAMUKRIRHC-UHFFFAOYSA-N/RUN1/EM
+md0dir: /entire/results/TUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/TUJKJAMUKRIRHC-UHFFFAOYSA-N/RUN1/MD0
+sadir: /entire/results/TUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/TUJKJAMUKRIRHC-UHFFFAOYSA-N/RUN1/ANNEAL1
+1. Running SANDER :
+agr1:  TUJKJAMUKRIRHC-UHFFFAOYSA-N_em.out
+agr2:  /entire/results/TUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/TUJKJAMUKRIRHC-UHFFFAOYSA-N/RUN1/TLEAP/TUJKJAMUKRIRHC-UHFFFAOYSA-N.crd
+agr3:  /entire/results/TUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/TUJKJAMUKRIRHC-UHFFFAOYSA-N/RUN1/TLEAP/TUJKJAMUKRIRHC-UHFFFAOYSA-N.top
+agr4:  TUJKJAMUKRIRHC-UHFFFAOYSA-N_em.rst
+2. Running SANDER :
+agr1:  md0.in
+agr2:  TUJKJAMUKRIRHC-UHFFFAOYSA-N0.out
+agr3:  /entire/results/TUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/TUJKJAMUKRIRHC-UHFFFAOYSA-N/RUN1/EM/TUJKJAMUKRIRHC-UHFFFAOYSA-N_em.rst
+agr4:  /entire/results/TUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/TUJKJAMUKRIRHC-UHFFFAOYSA-N/RUN1/TLEAP/TUJKJAMUKRIRHC-UHFFFAOYSA-N.top
+agr5:  TUJKJAMUKRIRHC-UHFFFAOYSA-N0.rst
+agr6:  TUJKJAMUKRIRHC-UHFFFAOYSA-N0.crd
+run time = 0 minutes.
+run time = 0 minutes.

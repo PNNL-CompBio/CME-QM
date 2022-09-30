@@ -1,0 +1,193 @@
+
+          -------------------------------------------------------
+          Amber 20 SANDER                              2020
+          -------------------------------------------------------
+
+| Run on 09/20/2020 at 22:14:34
+
+|   Executable path: sander
+| Working directory: /entire/results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/AUJKJAMUKRIRHC-UHFFFAOYSA-N/RUN1/EM
+|          Hostname: 8b50e8321ba3
+
+  [-O]verwriting output
+
+File Assignments:
+|  MDIN: em.in                                                                 
+| MDOUT: AUJKJAMUKRIRHC-UHFFFAOYSA-N_em.out                                    
+|INPCRD: /entire/results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/AUJKJAMU
+|  PARM: /entire/results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/AUJKJAMU
+|RESTRT: AUJKJAMUKRIRHC-UHFFFAOYSA-N_em.rst                                    
+|  REFC: refc                                                                  
+| MDVEL: mdvel                                                                 
+| MDFRC: mdfrc                                                                 
+|  MDEN: mden                                                                  
+| MDCRD: mdcrd                                                                 
+|MDINFO: mdinfo                                                                
+|  MTMD: mtmd                                                                  
+|INPDIP: inpdip                                                                
+|RSTDIP: rstdip                                                                
+|INPTRA: inptraj                                                               
+
+
+ Here is the input file:
+
+                                                                               
+results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/AUJKJAMUKRIRHC-UHFFFAOYSA-N: energy minimization prior to MD
+ &cntrl                                                                        
+  imin = 1,                                                                    
+  maxcyc = 500,                                                                
+  ncyc = 250,                                                                  
+  nscm = 1,                                                                    
+  ntb = 0,                                                                     
+  igb = 0,                                                                     
+  cut = 999,                                                                   
+  rgbmax = 999                                                                 
+ /                                                                             
+                                                                               
+
+--------------------------------------------------------------------------------
+   1.  RESOURCE   USE: 
+--------------------------------------------------------------------------------
+
+| Flags:                                                                        
+|    NONPERIODIC   ntb=0 and igb=0: Setting up nonperiodic simulation
+|  *** cutoff > system size, list only builds once
+|Largest sphere to fit in unit cell has radius =    30.000
+| New format PARM file being parsed.
+| Version =    1.000 Date = 09/20/20 Time = 22:14:33
+ NATOM  =       3 NTYPES =       2 NBONH =       2 MBONA  =       0
+ NTHETH =       1 MTHETA =       0 NPHIH =       0 MPHIA  =       0
+ NHPARM =       0 NPARM  =       0 NNB   =       4 NRES   =       1
+ NBONA  =       0 NTHETA =       0 NPHIA =       0 NUMBND =       1
+ NUMANG =       1 NPTRA  =       0 NATYP =       2 NPHB   =       0
+ IFBOX  =       0 NMXRS  =       3 IFCAP =       0 NEXTRA =       0
+ NCOPY  =       0
+
+
+|     Memory Use     Allocated
+|     Real              701466
+|     Hollerith             12
+|     Integer            20076
+|     Max Pairs              3
+|     nblistReal            36
+|     nblist Int        761613
+|       Total             8534 kbytes
+
+| Note: 1-4 EEL scale factors are being read from the topology file.
+
+| Note: 1-4 VDW scale factors are being read from the topology file.
+| Duplicated    0 dihedrals
+| Duplicated    0 dihedrals
+
+--------------------------------------------------------------------------------
+   2.  CONTROL  DATA  FOR  THE  RUN
+--------------------------------------------------------------------------------
+
+*****                                                                           
+
+General flags:
+     imin    =       1, nmropt  =       0
+
+Nature and format of input:
+     ntx     =       1, irest   =       0, ntrx    =       1
+
+Nature and format of output:
+     ntxo    =       2, ntpr    =      50, ntrx    =       1, ntwr    =       1
+     iwrap   =       0, ntwx    =       0, ntwv    =       0, ntwe    =       0
+     ioutfm  =       1, ntwprt  =       0, idecomp =       0, rbornstat=      0
+
+Potential function:
+     ntf     =       1, ntb     =       0, igb     =       0, nsnb    =      25
+     ipol    =       0, gbsa    =       0, iesp    =       0
+     dielc   =   1.00000, cut     = 999.00000, intdiel =   1.00000
+
+Frozen or restrained atoms:
+     ibelly  =       0, ntr     =       0
+
+Energy minimization:
+     maxcyc  =     500, ncyc    =     250, ntmin   =       1
+     dx0     =   0.01000, drms    =   0.00010
+|  INFO: Old style inpcrd file read
+
+
+--------------------------------------------------------------------------------
+   3.  ATOMIC COORDINATES AND VELOCITIES
+--------------------------------------------------------------------------------
+
+*****                                                                           
+ begin time read from input coords =     0.000 ps
+
+ Number of triangulated 3-point waters found:        0
+
+     Sum of charges from parm topology file =  -0.00100000
+     Forcing neutrality...
+
+--------------------------------------------------------------------------------
+   4.  RESULTS
+--------------------------------------------------------------------------------
+
+ ---------------------------------------------------
+
+     eedmeth=4: Setting switch to one everywhere
+
+ ---------------------------------------------------
+| Local SIZE OF NONBOND LIST =          0
+| TOTAL SIZE OF NONBOND LIST =          0
+
+
+   NSTEP       ENERGY          RMS            GMAX         NAME    NUMBER
+      1       9.6839E-02     2.4516E+00     4.8780E+00     H           2
+
+ BOND    =        0.0130  ANGLE   =        0.0838  DIHED      =        0.0000
+ VDWAALS =        0.0000  EEL     =        0.0000  HBOND      =        0.0000
+ 1-4 VDW =        0.0000  1-4 EEL =        0.0000  RESTRAINT  =        0.0000
+
+
+   NSTEP       ENERGY          RMS            GMAX         NAME    NUMBER
+     50       3.3472E-08     3.2218E-03     6.9138E-03     O           1
+
+ BOND    =        0.0000  ANGLE   =        0.0000  DIHED      =        0.0000
+ VDWAALS =        0.0000  EEL     =        0.0000  HBOND      =        0.0000
+ 1-4 VDW =        0.0000  1-4 EEL =        0.0000  RESTRAINT  =        0.0000
+
+
+   NSTEP       ENERGY          RMS            GMAX         NAME    NUMBER
+    100       6.5094E-09     1.4208E-03     3.0491E-03     O           1
+
+ BOND    =        0.0000  ANGLE   =        0.0000  DIHED      =        0.0000
+ VDWAALS =        0.0000  EEL     =        0.0000  HBOND      =        0.0000
+ 1-4 VDW =        0.0000  1-4 EEL =        0.0000  RESTRAINT  =        0.0000
+
+
+   NSTEP       ENERGY          RMS            GMAX         NAME    NUMBER
+    150       9.6249E-10     5.4633E-04     1.1724E-03     O           1
+
+ BOND    =        0.0000  ANGLE   =        0.0000  DIHED      =        0.0000
+ VDWAALS =        0.0000  EEL     =        0.0000  HBOND      =        0.0000
+ 1-4 VDW =        0.0000  1-4 EEL =        0.0000  RESTRAINT  =        0.0000
+
+
+   NSTEP       ENERGY          RMS            GMAX         NAME    NUMBER
+    200       3.3472E-08     3.2218E-03     6.9141E-03     O           1
+
+ BOND    =        0.0000  ANGLE   =        0.0000  DIHED      =        0.0000
+ VDWAALS =        0.0000  EEL     =        0.0000  HBOND      =        0.0000
+ 1-4 VDW =        0.0000  1-4 EEL =        0.0000  RESTRAINT  =        0.0000
+
+
+   NSTEP       ENERGY          RMS            GMAX         NAME    NUMBER
+    250       6.5094E-09     1.4208E-03     3.0491E-03     O           1
+
+ BOND    =        0.0000  ANGLE   =        0.0000  DIHED      =        0.0000
+ VDWAALS =        0.0000  EEL     =        0.0000  HBOND      =        0.0000
+ 1-4 VDW =        0.0000  1-4 EEL =        0.0000  RESTRAINT  =        0.0000
+ Frac coord min, max:   -3.0828783692002291        7.6251365055401026     
+ The system has extended beyond 
+     the extent of the virtual box.
+ Restarting sander will recalculate
+    a new virtual box with 30 Angstroms
+    extra on each side, if there is a
+    restart file for this configuration.
+ SANDER BOMB in subroutine Routine: map_coords (ew_force.f)
+ Atom out of bounds. If a restart has been written,
+ restarting should resolve the error

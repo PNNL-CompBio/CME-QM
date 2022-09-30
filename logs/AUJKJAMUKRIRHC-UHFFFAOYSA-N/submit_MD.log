@@ -1,0 +1,134 @@
+
+==========In calculate_total_charge.sh
+results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/AUJKJAMUKRIRHC-UHFFFAOYSA-N.mol2        29971             29971.0000
+
+==========In batch_setupallfiles.sh :
+Current dir /entire
+mol2dir:  results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure
+mddir: 
+rindex:  1 saindex:  1
+start_count:  1 end_count:  1
+molecule name: results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/AUJKJAMUKRIRHC-UHFFFAOYSA-N
+
+==========In setupfiles.sh!
+mol2f AUJKJAMUKRIRHC-UHFFFAOYSA-N
+creating following directories at: /entire
+moldir: /entire/results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/AUJKJAMUKRIRHC-UHFFFAOYSA-N
+rundir:/entire/results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/AUJKJAMUKRIRHC-UHFFFAOYSA-N/RUN1
+acdir: /entire/results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/AUJKJAMUKRIRHC-UHFFFAOYSA-N/RUN1/ANTECHAMBER
+tldir: /entire/results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/AUJKJAMUKRIRHC-UHFFFAOYSA-N/RUN1/TLEAP
+emdir: /entire/results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/AUJKJAMUKRIRHC-UHFFFAOYSA-N/RUN1/EM
+md0dir: /entire/results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/AUJKJAMUKRIRHC-UHFFFAOYSA-N/RUN1/MD0
+sadir: /entire/results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/AUJKJAMUKRIRHC-UHFFFAOYSA-N/RUN1/ANNEAL1
+run time = 0 minutes.
+Assigning AM1-BCC charges to mol2 file, AUJKJAMUKRIRHC-UHFFFAOYSA-N
+In directory mol = results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/AUJKJAMUKRIRHC-UHFFFAOYSA-N
+mol2f  = AUJKJAMUKRIRHC-UHFFFAOYSA-N
+mol = results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/AUJKJAMUKRIRHC-UHFFFAOYSA-N
+total_charges dir results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/md
+charge_line :./results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/md/total_charges.txt
+total charge on the molecule: 0.0000
+Running amber_ac.sh :
+
+==========In amber_ac.sh :
+current directory /entire
+moldir: /entire/results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/AUJKJAMUKRIRHC-UHFFFAOYSA-N
+acdir: /entire/results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/AUJKJAMUKRIRHC-UHFFFAOYSA-N/RUN1/ANTECHAMBER
+antechamber path: 
+rundir: /entire/results/AUJKJAMUKRIRHC-UHFFFAOYSA-N/initial_structure/AUJKJAMUKRIRHC-UHFFFAOYSA-N/RUN1
+agr1: AUJKJAMUKRIRHC-UHFFFAOYSA-N.mol2
+agr2: AUJKJAMUKRIRHC-UHFFFAOYSA-N_md.mol2
+
+Welcome to antechamber 20.0: molecular input file processor.
+
+acdoctor mode is on: check and diagnose problems in the input file.
+-- Check Format for mol2 File --
+   Status: pass
+-- Check Unusual Elements --
+   Status: pass
+-- Check Open Valences --
+   Status: pass
+-- Check Geometry --
+      for those bonded   
+      for those not bonded   
+   Status: pass
+-- Check Weird Bonds --
+   Status: pass
+-- Check Number of Units --
+   Status: pass
+acdoctor mode has completed checking the input file.
+
+
+---Judge bond type for Residue 1 with ID of 1 and Name of HOH ---
+
+---Judge bond type for Residue 2 with ID of 0 and Name of HOH ---
+Info: Total number of electrons: 10; net charge: 0
+
+parmchk2 path: 
+run time = 0 minutes.
+-I: Adding /opt/conda/dat/leap/prep to search path.
+-I: Adding /opt/conda/dat/leap/lib to search path.
+-I: Adding /opt/conda/dat/leap/parm to search path.
+-I: Adding /opt/conda/dat/leap/cmd to search path.
+-s: Ignoring startup file: leaprc
+-f: Source leap.in.
+
+Welcome to LEaP!
+Sourcing: ./leap.in
+----- Source: /opt/conda/dat/leap/cmd/leaprc.gaff
+----- Source of /opt/conda/dat/leap/cmd/leaprc.gaff done
+Log file: ./leap.log
+Loading parameters: /opt/conda/dat/leap/parm/gaff.dat
+Reading title:
+AMBER General Force Field for organic molecules (Version 1.81, May 2017)
+----- Source: /opt/conda/dat/leap/cmd/oldff/leaprc.ff14SB
+----- Source of /opt/conda/dat/leap/cmd/oldff/leaprc.ff14SB done
+Log file: ./leap.log
+Loading parameters: /opt/conda/dat/leap/parm/parm10.dat
+Reading title:
+PARM99 + frcmod.ff99SB + frcmod.parmbsc0 + OL3 for RNA
+Loading parameters: /opt/conda/dat/leap/parm/frcmod.ff14SB
+Reading force field modification type file (frcmod)
+Reading title:
+ff14SB protein backbone and sidechain parameters
+Loading library: /opt/conda/dat/leap/lib/amino12.lib
+Loading library: /opt/conda/dat/leap/lib/aminoct12.lib
+Loading library: /opt/conda/dat/leap/lib/aminont12.lib
+Loading library: /opt/conda/dat/leap/lib/nucleic12.lib
+Loading library: /opt/conda/dat/leap/lib/atomic_ions.lib
+Loading library: /opt/conda/dat/leap/lib/solvents.lib
+Loading parameters: ../ANTECHAMBER/AUJKJAMUKRIRHC-UHFFFAOYSA-N_md.frcmod
+Reading force field modification type file (frcmod)
+Reading title:
+Remark line goes here
+Loading parameters: /opt/conda/dat/leap/parm/frcmod.ionsjc_spce
+Reading force field modification type file (frcmod)
+Reading title:
+Monovalent ion parameters for Ewald and SPC/E water from Joung & Cheatham JPCB (2008)
+Loading Mol2 file: ../ANTECHAMBER/mol_tleapinput.mol2
+Reading MOLECULE named *****
+Checking Unit.
+Building topology.
+Building atom parameters.
+Building bond parameters.
+Building angle parameters.
+Building proper torsion parameters.
+Building improper torsion parameters.
+ total 0 improper torsions applied
+Building H-Bond parameters.
+Incorporating Non-Bonded adjustments.
+Not Marking per-residue atom chain types.
+Marking per-residue atom chain types.
+  (Residues lacking connect0/connect1 - 
+   these don't have chain types marked:
+
+	res	total affected
+
+	HOH	1
+  )
+ (no restraints)
+	Quit
+
+Exiting LEaP: Errors = 0; Warnings = 0; Notes = 0.
+run time = 0 minutes.
+==========Finish

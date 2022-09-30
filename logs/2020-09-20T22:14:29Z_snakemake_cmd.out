@@ -1,0 +1,818 @@
+Welcome to the CBC MILP Solver 
+Version: 2.10.5 
+Build Date: Apr  7 2020 
+
+command line - cbc /tmp/cb98eb1ad94243de83fb47c313f2308f-pulp.mps max ratio None allow None threads None presolve on strong None gomory on knapsack on probing on branch printingOptions all solution /tmp/cb98eb1ad94243de83fb47c313f2308f-pulp.sol (default strategy 1)
+At line 2 NAME          MODEL
+At line 3 ROWS
+At line 7 COLUMNS
+At line 33 RHS
+At line 36 BOUNDS
+At line 42 ENDATA
+Problem MODEL has 2 rows, 5 columns and 10 elements
+Coin0008I MODEL read with 0 errors
+String of None is illegal for double parameter ratioGap value remains 0
+String of None is illegal for double parameter allowableGap value remains 0
+String of None is illegal for integer parameter threads value remains 0
+String of None is illegal for integer parameter strongBranching value remains 5
+Option for gomoryCuts changed from ifmove to on
+Option for knapsackCuts changed from ifmove to on
+Continuous objective value is 4 - 0.00 seconds
+Cgl0004I processed model has 0 rows, 0 columns (0 integer (0 of which binary)) and 0 elements
+Cbc3007W No integer variables - nothing to do
+Cuts at root node changed objective from -4 to -1.79769e+308
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Knapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+
+Result - Optimal solution found
+
+Objective value:                4.00000000
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             0.00
+Time (Wallclock seconds):       0.00
+
+Option for printingOptions changed from normal to all
+Total time (CPU seconds):       0.01   (Wallclock seconds):       0.01
+
+Welcome to the CBC MILP Solver 
+Version: 2.10.5 
+Build Date: Apr  7 2020 
+
+command line - cbc /tmp/90a9db7ece924eb19d613ea8d0d7b736-pulp.mps max ratio None allow None threads None presolve on strong None gomory on knapsack on probing on branch printingOptions all solution /tmp/90a9db7ece924eb19d613ea8d0d7b736-pulp.sol (default strategy 1)
+At line 2 NAME          MODEL
+At line 3 ROWS
+At line 7 COLUMNS
+At line 33 RHS
+At line 36 BOUNDS
+At line 42 ENDATA
+Problem MODEL has 2 rows, 5 columns and 10 elements
+Coin0008I MODEL read with 0 errors
+String of None is illegal for double parameter ratioGap value remains 0
+String of None is illegal for double parameter allowableGap value remains 0
+String of None is illegal for integer parameter threads value remains 0
+String of None is illegal for integer parameter strongBranching value remains 5
+Option for gomoryCuts changed from ifmove to on
+Option for knapsackCuts changed from ifmove to on
+Continuous objective value is 4 - 0.00 seconds
+Cgl0004I processed model has 0 rows, 0 columns (0 integer (0 of which binary)) and 0 elements
+Cbc3007W No integer variables - nothing to do
+Cuts at root node changed objective from -4 to -1.79769e+308
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Knapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+
+Result - Optimal solution found
+
+Objective value:                4.00000000
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             0.01
+Time (Wallclock seconds):       0.00
+
+Option for printingOptions changed from normal to all
+Total time (CPU seconds):       0.01   (Wallclock seconds):       0.01
+
+Welcome to the CBC MILP Solver 
+Version: 2.10.5 
+Build Date: Apr  7 2020 
+
+command line - cbc /tmp/aeda402e8d1e469a9de1550d8560ee3b-pulp.mps max ratio None allow None threads None presolve on strong None gomory on knapsack on probing on branch printingOptions all solution /tmp/aeda402e8d1e469a9de1550d8560ee3b-pulp.sol (default strategy 1)
+At line 2 NAME          MODEL
+At line 3 ROWS
+At line 7 COLUMNS
+At line 23 RHS
+At line 26 BOUNDS
+At line 30 ENDATA
+Problem MODEL has 2 rows, 3 columns and 6 elements
+Coin0008I MODEL read with 0 errors
+String of None is illegal for double parameter ratioGap value remains 0
+String of None is illegal for double parameter allowableGap value remains 0
+String of None is illegal for integer parameter threads value remains 0
+String of None is illegal for integer parameter strongBranching value remains 5
+Option for gomoryCuts changed from ifmove to on
+Option for knapsackCuts changed from ifmove to on
+Continuous objective value is 0 - 0.00 seconds
+Cgl0002I 3 variables fixed
+Cgl0004I processed model has 0 rows, 0 columns (0 integer (0 of which binary)) and 0 elements
+Cbc3007W No integer variables - nothing to do
+Cuts at root node changed objective from 0 to -1.79769e+308
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Knapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+
+Result - Optimal solution found
+
+Objective value:                0.00000000
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             0.00
+Time (Wallclock seconds):       0.00
+
+Option for printingOptions changed from normal to all
+Total time (CPU seconds):       0.01   (Wallclock seconds):       0.01
+
+Welcome to the CBC MILP Solver 
+Version: 2.10.5 
+Build Date: Apr  7 2020 
+
+command line - cbc /tmp/ee22b2fba50f477eb98f13bf2e183426-pulp.mps max ratio None allow None threads None presolve on strong None gomory on knapsack on probing on branch printingOptions all solution /tmp/ee22b2fba50f477eb98f13bf2e183426-pulp.sol (default strategy 1)
+At line 2 NAME          MODEL
+At line 3 ROWS
+At line 7 COLUMNS
+At line 23 RHS
+At line 26 BOUNDS
+At line 30 ENDATA
+Problem MODEL has 2 rows, 3 columns and 6 elements
+Coin0008I MODEL read with 0 errors
+String of None is illegal for double parameter ratioGap value remains 0
+String of None is illegal for double parameter allowableGap value remains 0
+String of None is illegal for integer parameter threads value remains 0
+String of None is illegal for integer parameter strongBranching value remains 5
+Option for gomoryCuts changed from ifmove to on
+Option for knapsackCuts changed from ifmove to on
+Continuous objective value is 2 - 0.00 seconds
+Cgl0004I processed model has 0 rows, 0 columns (0 integer (0 of which binary)) and 0 elements
+Cbc3007W No integer variables - nothing to do
+Cuts at root node changed objective from -2 to -1.79769e+308
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Knapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+
+Result - Optimal solution found
+
+Objective value:                2.00000000
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             0.00
+Time (Wallclock seconds):       0.00
+
+Option for printingOptions changed from normal to all
+Total time (CPU seconds):       0.01   (Wallclock seconds):       0.01
+
+Welcome to the CBC MILP Solver 
+Version: 2.10.5 
+Build Date: Apr  7 2020 
+
+command line - cbc /tmp/3d40b35ad75e4f84b808fec74043172e-pulp.mps max ratio None allow None threads None presolve on strong None gomory on knapsack on probing on branch printingOptions all solution /tmp/3d40b35ad75e4f84b808fec74043172e-pulp.sol (default strategy 1)
+At line 2 NAME          MODEL
+At line 3 ROWS
+At line 7 COLUMNS
+At line 18 RHS
+At line 21 BOUNDS
+At line 24 ENDATA
+Problem MODEL has 2 rows, 2 columns and 4 elements
+Coin0008I MODEL read with 0 errors
+String of None is illegal for double parameter ratioGap value remains 0
+String of None is illegal for double parameter allowableGap value remains 0
+String of None is illegal for integer parameter threads value remains 0
+String of None is illegal for integer parameter strongBranching value remains 5
+Option for gomoryCuts changed from ifmove to on
+Option for knapsackCuts changed from ifmove to on
+Continuous objective value is 2 - 0.00 seconds
+Cgl0004I processed model has 0 rows, 0 columns (0 integer (0 of which binary)) and 0 elements
+Cbc3007W No integer variables - nothing to do
+Cuts at root node changed objective from -2 to -1.79769e+308
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Knapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+
+Result - Optimal solution found
+
+Objective value:                2.00000000
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             0.01
+Time (Wallclock seconds):       0.00
+
+Option for printingOptions changed from normal to all
+Total time (CPU seconds):       0.01   (Wallclock seconds):       0.00
+
+Welcome to the CBC MILP Solver 
+Version: 2.10.5 
+Build Date: Apr  7 2020 
+
+command line - cbc /tmp/d5b58232b6f741c397bed10f67779bd6-pulp.mps max ratio None allow None threads None presolve on strong None gomory on knapsack on probing on branch printingOptions all solution /tmp/d5b58232b6f741c397bed10f67779bd6-pulp.sol (default strategy 1)
+At line 2 NAME          MODEL
+At line 3 ROWS
+At line 7 COLUMNS
+At line 23 RHS
+At line 26 BOUNDS
+At line 30 ENDATA
+Problem MODEL has 2 rows, 3 columns and 6 elements
+Coin0008I MODEL read with 0 errors
+String of None is illegal for double parameter ratioGap value remains 0
+String of None is illegal for double parameter allowableGap value remains 0
+String of None is illegal for integer parameter threads value remains 0
+String of None is illegal for integer parameter strongBranching value remains 5
+Option for gomoryCuts changed from ifmove to on
+Option for knapsackCuts changed from ifmove to on
+Continuous objective value is 2 - 0.00 seconds
+Cgl0004I processed model has 0 rows, 0 columns (0 integer (0 of which binary)) and 0 elements
+Cbc3007W No integer variables - nothing to do
+Cuts at root node changed objective from -2 to -1.79769e+308
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Knapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+
+Result - Optimal solution found
+
+Objective value:                2.00000000
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             0.01
+Time (Wallclock seconds):       0.00
+
+Option for printingOptions changed from normal to all
+Total time (CPU seconds):       0.01   (Wallclock seconds):       0.01
+
+Welcome to the CBC MILP Solver 
+Version: 2.10.5 
+Build Date: Apr  7 2020 
+
+command line - cbc /tmp/97777d03c74240488fc22a0dfdd9c3af-pulp.mps max ratio None allow None threads None presolve on strong None gomory on knapsack on probing on branch printingOptions all solution /tmp/97777d03c74240488fc22a0dfdd9c3af-pulp.sol (default strategy 1)
+At line 2 NAME          MODEL
+At line 3 ROWS
+At line 7 COLUMNS
+At line 18 RHS
+At line 21 BOUNDS
+At line 24 ENDATA
+Problem MODEL has 2 rows, 2 columns and 4 elements
+Coin0008I MODEL read with 0 errors
+String of None is illegal for double parameter ratioGap value remains 0
+String of None is illegal for double parameter allowableGap value remains 0
+String of None is illegal for integer parameter threads value remains 0
+String of None is illegal for integer parameter strongBranching value remains 5
+Option for gomoryCuts changed from ifmove to on
+Option for knapsackCuts changed from ifmove to on
+Continuous objective value is 2 - 0.00 seconds
+Cgl0004I processed model has 0 rows, 0 columns (0 integer (0 of which binary)) and 0 elements
+Cbc3007W No integer variables - nothing to do
+Cuts at root node changed objective from -2 to -1.79769e+308
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Knapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+
+Result - Optimal solution found
+
+Objective value:                2.00000000
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             0.01
+Time (Wallclock seconds):       0.00
+
+Option for printingOptions changed from normal to all
+Total time (CPU seconds):       0.04   (Wallclock seconds):       0.02
+
+Welcome to the CBC MILP Solver 
+Version: 2.10.5 
+Build Date: Apr  7 2020 
+
+command line - cbc /tmp/9f7ff396cda44bbcb2d5520d253ddf80-pulp.mps max ratio None allow None threads None presolve on strong None gomory on knapsack on probing on branch printingOptions all solution /tmp/9f7ff396cda44bbcb2d5520d253ddf80-pulp.sol (default strategy 1)
+At line 2 NAME          MODEL
+At line 3 ROWS
+At line 7 COLUMNS
+At line 23 RHS
+At line 26 BOUNDS
+At line 30 ENDATA
+Problem MODEL has 2 rows, 3 columns and 6 elements
+Coin0008I MODEL read with 0 errors
+String of None is illegal for double parameter ratioGap value remains 0
+String of None is illegal for double parameter allowableGap value remains 0
+String of None is illegal for integer parameter threads value remains 0
+String of None is illegal for integer parameter strongBranching value remains 5
+Option for gomoryCuts changed from ifmove to on
+Option for knapsackCuts changed from ifmove to on
+Continuous objective value is 2 - 0.00 seconds
+Cgl0004I processed model has 0 rows, 0 columns (0 integer (0 of which binary)) and 0 elements
+Cbc3007W No integer variables - nothing to do
+Cuts at root node changed objective from -2 to -1.79769e+308
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Knapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+
+Result - Optimal solution found
+
+Objective value:                2.00000000
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             0.00
+Time (Wallclock seconds):       0.00
+
+Option for printingOptions changed from normal to all
+Total time (CPU seconds):       0.01   (Wallclock seconds):       0.01
+
+Welcome to the CBC MILP Solver 
+Version: 2.10.5 
+Build Date: Apr  7 2020 
+
+command line - cbc /tmp/5e767072fc9a487f9a74c47adf921e8a-pulp.mps max ratio None allow None threads None presolve on strong None gomory on knapsack on probing on branch printingOptions all solution /tmp/5e767072fc9a487f9a74c47adf921e8a-pulp.sol (default strategy 1)
+At line 2 NAME          MODEL
+At line 3 ROWS
+At line 7 COLUMNS
+At line 18 RHS
+At line 21 BOUNDS
+At line 24 ENDATA
+Problem MODEL has 2 rows, 2 columns and 4 elements
+Coin0008I MODEL read with 0 errors
+String of None is illegal for double parameter ratioGap value remains 0
+String of None is illegal for double parameter allowableGap value remains 0
+String of None is illegal for integer parameter threads value remains 0
+String of None is illegal for integer parameter strongBranching value remains 5
+Option for gomoryCuts changed from ifmove to on
+Option for knapsackCuts changed from ifmove to on
+Continuous objective value is 2 - 0.00 seconds
+Cgl0004I processed model has 0 rows, 0 columns (0 integer (0 of which binary)) and 0 elements
+Cbc3007W No integer variables - nothing to do
+Cuts at root node changed objective from -2 to -1.79769e+308
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Knapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+
+Result - Optimal solution found
+
+Objective value:                2.00000000
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             0.01
+Time (Wallclock seconds):       0.00
+
+Option for printingOptions changed from normal to all
+Total time (CPU seconds):       0.01   (Wallclock seconds):       0.01
+
+Welcome to the CBC MILP Solver 
+Version: 2.10.5 
+Build Date: Apr  7 2020 
+
+command line - cbc /tmp/d986a7df9416470d805350b28756741a-pulp.mps max ratio None allow None threads None presolve on strong None gomory on knapsack on probing on branch printingOptions all solution /tmp/d986a7df9416470d805350b28756741a-pulp.sol (default strategy 1)
+At line 2 NAME          MODEL
+At line 3 ROWS
+At line 7 COLUMNS
+At line 13 RHS
+At line 16 BOUNDS
+At line 18 ENDATA
+Problem MODEL has 2 rows, 1 columns and 2 elements
+Coin0008I MODEL read with 0 errors
+String of None is illegal for double parameter ratioGap value remains 0
+String of None is illegal for double parameter allowableGap value remains 0
+String of None is illegal for integer parameter threads value remains 0
+String of None is illegal for integer parameter strongBranching value remains 5
+Option for gomoryCuts changed from ifmove to on
+Option for knapsackCuts changed from ifmove to on
+Continuous objective value is 2 - 0.00 seconds
+Cgl0004I processed model has 0 rows, 0 columns (0 integer (0 of which binary)) and 0 elements
+Cbc3007W No integer variables - nothing to do
+Cuts at root node changed objective from -2 to -1.79769e+308
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Knapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+
+Result - Optimal solution found
+
+Objective value:                2.00000000
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             0.02
+Time (Wallclock seconds):       0.01
+
+Option for printingOptions changed from normal to all
+Total time (CPU seconds):       0.02   (Wallclock seconds):       0.01
+
+Welcome to the CBC MILP Solver 
+Version: 2.10.5 
+Build Date: Apr  7 2020 
+
+command line - cbc /tmp/b7a16cf7b1be45948f44834539d8f3a9-pulp.mps max ratio None allow None threads None presolve on strong None gomory on knapsack on probing on branch printingOptions all solution /tmp/b7a16cf7b1be45948f44834539d8f3a9-pulp.sol (default strategy 1)
+At line 2 NAME          MODEL
+At line 3 ROWS
+At line 7 COLUMNS
+At line 13 RHS
+At line 16 BOUNDS
+At line 18 ENDATA
+Problem MODEL has 2 rows, 1 columns and 2 elements
+Coin0008I MODEL read with 0 errors
+String of None is illegal for double parameter ratioGap value remains 0
+String of None is illegal for double parameter allowableGap value remains 0
+String of None is illegal for integer parameter threads value remains 0
+String of None is illegal for integer parameter strongBranching value remains 5
+Option for gomoryCuts changed from ifmove to on
+Option for knapsackCuts changed from ifmove to on
+Continuous objective value is 2 - 0.00 seconds
+Cgl0004I processed model has 0 rows, 0 columns (0 integer (0 of which binary)) and 0 elements
+Cbc3007W No integer variables - nothing to do
+Cuts at root node changed objective from -2 to -1.79769e+308
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Knapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+
+Result - Optimal solution found
+
+Objective value:                2.00000000
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             0.00
+Time (Wallclock seconds):       0.00
+
+Option for printingOptions changed from normal to all
+Total time (CPU seconds):       0.01   (Wallclock seconds):       0.01
+
+Welcome to the CBC MILP Solver 
+Version: 2.10.5 
+Build Date: Apr  7 2020 
+
+command line - cbc /tmp/689bd9b8e8204b36aeb5ba9b708226a9-pulp.mps max ratio None allow None threads None presolve on strong None gomory on knapsack on probing on branch printingOptions all solution /tmp/689bd9b8e8204b36aeb5ba9b708226a9-pulp.sol (default strategy 1)
+At line 2 NAME          MODEL
+At line 3 ROWS
+At line 7 COLUMNS
+At line 13 RHS
+At line 16 BOUNDS
+At line 18 ENDATA
+Problem MODEL has 2 rows, 1 columns and 2 elements
+Coin0008I MODEL read with 0 errors
+String of None is illegal for double parameter ratioGap value remains 0
+String of None is illegal for double parameter allowableGap value remains 0
+String of None is illegal for integer parameter threads value remains 0
+String of None is illegal for integer parameter strongBranching value remains 5
+Option for gomoryCuts changed from ifmove to on
+Option for knapsackCuts changed from ifmove to on
+Continuous objective value is 2 - 0.00 seconds
+Cgl0004I processed model has 0 rows, 0 columns (0 integer (0 of which binary)) and 0 elements
+Cbc3007W No integer variables - nothing to do
+Cuts at root node changed objective from -2 to -1.79769e+308
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Knapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+
+Result - Optimal solution found
+
+Objective value:                2.00000000
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             0.01
+Time (Wallclock seconds):       0.00
+
+Option for printingOptions changed from normal to all
+Total time (CPU seconds):       0.01   (Wallclock seconds):       0.01
+
+Welcome to the CBC MILP Solver 
+Version: 2.10.5 
+Build Date: Apr  7 2020 
+
+command line - cbc /tmp/6ff4d2f032d24a47b008e5803a438d6d-pulp.mps max ratio None allow None threads None presolve on strong None gomory on knapsack on probing on branch printingOptions all solution /tmp/6ff4d2f032d24a47b008e5803a438d6d-pulp.sol (default strategy 1)
+At line 2 NAME          MODEL
+At line 3 ROWS
+At line 7 COLUMNS
+At line 13 RHS
+At line 16 BOUNDS
+At line 18 ENDATA
+Problem MODEL has 2 rows, 1 columns and 2 elements
+Coin0008I MODEL read with 0 errors
+String of None is illegal for double parameter ratioGap value remains 0
+String of None is illegal for double parameter allowableGap value remains 0
+String of None is illegal for integer parameter threads value remains 0
+String of None is illegal for integer parameter strongBranching value remains 5
+Option for gomoryCuts changed from ifmove to on
+Option for knapsackCuts changed from ifmove to on
+Continuous objective value is 2 - 0.00 seconds
+Cgl0004I processed model has 0 rows, 0 columns (0 integer (0 of which binary)) and 0 elements
+Cbc3007W No integer variables - nothing to do
+Cuts at root node changed objective from -2 to -1.79769e+308
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Knapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+
+Result - Optimal solution found
+
+Objective value:                2.00000000
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             0.00
+Time (Wallclock seconds):       0.00
+
+Option for printingOptions changed from normal to all
+Total time (CPU seconds):       0.01   (Wallclock seconds):       0.01
+
+Welcome to the CBC MILP Solver 
+Version: 2.10.5 
+Build Date: Apr  7 2020 
+
+command line - cbc /tmp/1f7dcb922d8e4959aeda4b4a71dc2e85-pulp.mps max ratio None allow None threads None presolve on strong None gomory on knapsack on probing on branch printingOptions all solution /tmp/1f7dcb922d8e4959aeda4b4a71dc2e85-pulp.sol (default strategy 1)
+At line 2 NAME          MODEL
+At line 3 ROWS
+At line 7 COLUMNS
+At line 13 RHS
+At line 16 BOUNDS
+At line 18 ENDATA
+Problem MODEL has 2 rows, 1 columns and 2 elements
+Coin0008I MODEL read with 0 errors
+String of None is illegal for double parameter ratioGap value remains 0
+String of None is illegal for double parameter allowableGap value remains 0
+String of None is illegal for integer parameter threads value remains 0
+String of None is illegal for integer parameter strongBranching value remains 5
+Option for gomoryCuts changed from ifmove to on
+Option for knapsackCuts changed from ifmove to on
+Continuous objective value is 2 - 0.00 seconds
+Cgl0004I processed model has 0 rows, 0 columns (0 integer (0 of which binary)) and 0 elements
+Cbc3007W No integer variables - nothing to do
+Cuts at root node changed objective from -2 to -1.79769e+308
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Knapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+
+Result - Optimal solution found
+
+Objective value:                2.00000000
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             0.01
+Time (Wallclock seconds):       0.00
+
+Option for printingOptions changed from normal to all
+Total time (CPU seconds):       0.01   (Wallclock seconds):       0.01
+
+Welcome to the CBC MILP Solver 
+Version: 2.10.5 
+Build Date: Apr  7 2020 
+
+command line - cbc /tmp/8cf64349ad404cacacbb86be6afcbe70-pulp.mps max ratio None allow None threads None presolve on strong None gomory on knapsack on probing on branch printingOptions all solution /tmp/8cf64349ad404cacacbb86be6afcbe70-pulp.sol (default strategy 1)
+At line 2 NAME          MODEL
+At line 3 ROWS
+At line 7 COLUMNS
+At line 13 RHS
+At line 16 BOUNDS
+At line 18 ENDATA
+Problem MODEL has 2 rows, 1 columns and 2 elements
+Coin0008I MODEL read with 0 errors
+String of None is illegal for double parameter ratioGap value remains 0
+String of None is illegal for double parameter allowableGap value remains 0
+String of None is illegal for integer parameter threads value remains 0
+String of None is illegal for integer parameter strongBranching value remains 5
+Option for gomoryCuts changed from ifmove to on
+Option for knapsackCuts changed from ifmove to on
+Continuous objective value is 2 - 0.00 seconds
+Cgl0004I processed model has 0 rows, 0 columns (0 integer (0 of which binary)) and 0 elements
+Cbc3007W No integer variables - nothing to do
+Cuts at root node changed objective from -2 to -1.79769e+308
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Knapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+
+Result - Optimal solution found
+
+Objective value:                2.00000000
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             0.01
+Time (Wallclock seconds):       0.00
+
+Option for printingOptions changed from normal to all
+Total time (CPU seconds):       0.01   (Wallclock seconds):       0.00
+
+Welcome to the CBC MILP Solver 
+Version: 2.10.5 
+Build Date: Apr  7 2020 
+
+command line - cbc /tmp/d6d977a553ac41bcb1c8302ed3dcb425-pulp.mps max ratio None allow None threads None presolve on strong None gomory on knapsack on probing on branch printingOptions all solution /tmp/d6d977a553ac41bcb1c8302ed3dcb425-pulp.sol (default strategy 1)
+At line 2 NAME          MODEL
+At line 3 ROWS
+At line 7 COLUMNS
+At line 13 RHS
+At line 16 BOUNDS
+At line 18 ENDATA
+Problem MODEL has 2 rows, 1 columns and 2 elements
+Coin0008I MODEL read with 0 errors
+String of None is illegal for double parameter ratioGap value remains 0
+String of None is illegal for double parameter allowableGap value remains 0
+String of None is illegal for integer parameter threads value remains 0
+String of None is illegal for integer parameter strongBranching value remains 5
+Option for gomoryCuts changed from ifmove to on
+Option for knapsackCuts changed from ifmove to on
+Continuous objective value is 2 - 0.00 seconds
+Cgl0004I processed model has 0 rows, 0 columns (0 integer (0 of which binary)) and 0 elements
+Cbc3007W No integer variables - nothing to do
+Cuts at root node changed objective from -2 to -1.79769e+308
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Knapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+
+Result - Optimal solution found
+
+Objective value:                2.00000000
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             0.01
+Time (Wallclock seconds):       0.00
+
+Option for printingOptions changed from normal to all
+Total time (CPU seconds):       0.01   (Wallclock seconds):       0.01
+
+Welcome to the CBC MILP Solver 
+Version: 2.10.5 
+Build Date: Apr  7 2020 
+
+command line - cbc /tmp/ea31f931a39046899fc8873b233785a6-pulp.mps max ratio None allow None threads None presolve on strong None gomory on knapsack on probing on branch printingOptions all solution /tmp/ea31f931a39046899fc8873b233785a6-pulp.sol (default strategy 1)
+At line 2 NAME          MODEL
+At line 3 ROWS
+At line 7 COLUMNS
+At line 13 RHS
+At line 16 BOUNDS
+At line 18 ENDATA
+Problem MODEL has 2 rows, 1 columns and 2 elements
+Coin0008I MODEL read with 0 errors
+String of None is illegal for double parameter ratioGap value remains 0
+String of None is illegal for double parameter allowableGap value remains 0
+String of None is illegal for integer parameter threads value remains 0
+String of None is illegal for integer parameter strongBranching value remains 5
+Option for gomoryCuts changed from ifmove to on
+Option for knapsackCuts changed from ifmove to on
+Continuous objective value is 2 - 0.00 seconds
+Cgl0004I processed model has 0 rows, 0 columns (0 integer (0 of which binary)) and 0 elements
+Cbc3007W No integer variables - nothing to do
+Cuts at root node changed objective from -2 to -1.79769e+308
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Knapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+
+Result - Optimal solution found
+
+Objective value:                2.00000000
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             0.01
+Time (Wallclock seconds):       0.01
+
+Option for printingOptions changed from normal to all
+Total time (CPU seconds):       0.02   (Wallclock seconds):       0.01
+
+Welcome to the CBC MILP Solver 
+Version: 2.10.5 
+Build Date: Apr  7 2020 
+
+command line - cbc /tmp/04cecceb0129417ca1e9d86472c085bf-pulp.mps max ratio None allow None threads None presolve on strong None gomory on knapsack on probing on branch printingOptions all solution /tmp/04cecceb0129417ca1e9d86472c085bf-pulp.sol (default strategy 1)
+At line 2 NAME          MODEL
+At line 3 ROWS
+At line 7 COLUMNS
+At line 13 RHS
+At line 16 BOUNDS
+At line 18 ENDATA
+Problem MODEL has 2 rows, 1 columns and 2 elements
+Coin0008I MODEL read with 0 errors
+String of None is illegal for double parameter ratioGap value remains 0
+String of None is illegal for double parameter allowableGap value remains 0
+String of None is illegal for integer parameter threads value remains 0
+String of None is illegal for integer parameter strongBranching value remains 5
+Option for gomoryCuts changed from ifmove to on
+Option for knapsackCuts changed from ifmove to on
+Continuous objective value is 2 - 0.00 seconds
+Cgl0004I processed model has 0 rows, 0 columns (0 integer (0 of which binary)) and 0 elements
+Cbc3007W No integer variables - nothing to do
+Cuts at root node changed objective from -2 to -1.79769e+308
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Knapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+
+Result - Optimal solution found
+
+Objective value:                2.00000000
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             0.01
+Time (Wallclock seconds):       0.00
+
+Option for printingOptions changed from normal to all
+Total time (CPU seconds):       0.01   (Wallclock seconds):       0.01
+
+Welcome to the CBC MILP Solver 
+Version: 2.10.5 
+Build Date: Apr  7 2020 
+
+command line - cbc /tmp/35de281426c84b83ae11661e28e2c691-pulp.mps max ratio None allow None threads None presolve on strong None gomory on knapsack on probing on branch printingOptions all solution /tmp/35de281426c84b83ae11661e28e2c691-pulp.sol (default strategy 1)
+At line 2 NAME          MODEL
+At line 3 ROWS
+At line 7 COLUMNS
+At line 13 RHS
+At line 16 BOUNDS
+At line 18 ENDATA
+Problem MODEL has 2 rows, 1 columns and 2 elements
+Coin0008I MODEL read with 0 errors
+String of None is illegal for double parameter ratioGap value remains 0
+String of None is illegal for double parameter allowableGap value remains 0
+String of None is illegal for integer parameter threads value remains 0
+String of None is illegal for integer parameter strongBranching value remains 5
+Option for gomoryCuts changed from ifmove to on
+Option for knapsackCuts changed from ifmove to on
+Continuous objective value is 2 - 0.00 seconds
+Cgl0004I processed model has 0 rows, 0 columns (0 integer (0 of which binary)) and 0 elements
+Cbc3007W No integer variables - nothing to do
+Cuts at root node changed objective from -2 to -1.79769e+308
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Knapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+
+Result - Optimal solution found
+
+Objective value:                2.00000000
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             0.01
+Time (Wallclock seconds):       0.01
+
+Option for printingOptions changed from normal to all
+Total time (CPU seconds):       0.02   (Wallclock seconds):       0.01
+

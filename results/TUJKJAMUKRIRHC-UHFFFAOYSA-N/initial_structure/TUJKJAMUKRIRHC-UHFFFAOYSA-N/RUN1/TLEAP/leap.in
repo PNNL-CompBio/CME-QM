@@ -1,0 +1,7 @@
+source /opt/conda/dat/leap/cmd/leaprc.gaff
+source /opt/conda/dat/leap/cmd/oldff/leaprc.ff14SB
+loadAmberParams ../ANTECHAMBER/TUJKJAMUKRIRHC-UHFFFAOYSA-N_md.frcmod
+loadAmberParams frcmod.ionsjc_spce
+TP = loadMol2 ../ANTECHAMBER/mol_tleapinput.mol2
+saveAmberParm TP prmtop inpcrd
+quit

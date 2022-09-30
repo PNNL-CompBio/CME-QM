@@ -1,0 +1,20 @@
+channels:
+  - conda-forge
+  - bioconda
+  - openbabel
+  - defaults
+  - main
+dependencies:
+  - python=3.7
+  - ambertools=20.9
+  - rdkit=2020.03.5
+  - openbabel=2.4.1
+  - snakemake=5.23.0
+  - graphviz
+  - xorg-libxrender
+  - xorg-libxpm
+
+
+
+
+
