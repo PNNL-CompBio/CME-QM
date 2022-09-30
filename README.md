@@ -16,7 +16,7 @@ CME pipeline perform quantum mechanical calculations using computational chemist
 
 CME Workflow:
 
-![alt text](../logs/cme_rulegraph.png)
+![alt text](./logs/cme_rulegraph.png)
 
 
 Reference: 
