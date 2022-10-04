@@ -1,6 +1,6 @@
-# Computational Modeling Engine (CME) Architecture for automated Physics-based Molecular Simulations
+# Computational Modeling Engine (CME) architecture for automated physics-based molecular simulations
 
-CME pipeline perform quantum mechanical calculations using computational chemistry code NWChem (1) for geometry optimziation, chemical property prediction and computing spectral properties critical for hit identification and lead optimization in drug deisgn and discovery.
+CME pipeline perform quantum mechanical simulations using computational chemistry code called NWChem (1) for geometry optimziation, chemical property prediction and computing spectral properties critical for hit identification and lead optimization in drug deisgn and discovery.
 
 1. [Pipeline (Snakemake Workflow)](devDocs/pipeline.md)
    Computational Modeling Engine (CME) runs based of Docker container. Given a Target molecule expressed with SMILE strings, it optimized the molecules and run Time-Dependent Density Functional Theory (TD-DFT) Excited state calculatons to generate Ultraviolet–visible (UV–Vis) spectra and other molecular properties.
